@@ -14,6 +14,9 @@ module.exports = {
         neutralGrayish: "hsl(257, 7%, 63%)",
         neutralDark: "hsl(255, 11%, 22%)",
         neutralViolet: "hsl(260, 8%, 14%)"
+      },
+      fontFamily: {
+        main: "18px"
       }
     },
   },
