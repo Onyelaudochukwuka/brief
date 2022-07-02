@@ -5,8 +5,8 @@ const Navbar:NextComponentType = () => {
   return (
       <div className="flex lg:flex-row flex-col gap-12 p-6 items-center font-bold text-base">
           <span className="font-bold text-2xl">Shortly</span>
-          <div className="flex w-3/4 float-right ml-auto items-center">
-          <div className="hidden lg:flex flex-row gap-10 text-neutralGrayish float-left mr-auto grow">
+          <div className="hidden lg:flex w-3/4 float-right ml-auto items-center">
+          <div className="flex lg:flex-row flex-col gap-10 text-neutralGrayish float-left mr-auto grow">
               <span className="hover:text-neutralViolet cursor-pointer">Features</span>
               <span className="hover:text-neutralViolet cursor-pointer">Pricing</span>
               <span className="hover:text-neutralViolet cursor-pointer">Resources</span>
