@@ -6,13 +6,13 @@ module.exports = {
   ],
   theme: {
     colors: {
-      primaryCol: "hsl(180, 66%, 49%)",
-      primaryDark: "hsl(257, 27%, 26%)",
-      secondary: "hsl(0, 87%, 67%)",
-      neutralGray: "hsl(0, 0%, 75%)",
-      neutralGrayish: "hsl(257, 7%, 63%)",
-      neutralDark: "hsl(255, 11%, 22%)",
-      neutralViolet: "hsl(260, 8%, 14%)",
+      primaryCol: "rgb(42, 207, 207)",
+      primaryDark: "rgb(59, 48, 84)",
+      secondary: "rgb(244, 98, 98)",
+      neutralGray: "rgb(191, 191, 191)",
+      neutralGrayish: "rgb(158, 154, 167)",
+      neutralDark: "rgb(53, 50, 62)",
+      neutralViolet: "rgb(35, 33, 39)",
       white: "#fff"
     },
     fontWeight: {
