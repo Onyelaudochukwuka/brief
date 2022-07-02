@@ -6,8 +6,8 @@ const Navbar = () => {
           <span className="font-bold">Shortly</span>
           <div>
               <span>Features</span>
-              <span></span>
-              <span></span>
+              <span>Pricing</span>
+              <span>Resources</span>
           </div>
     </div>
   )
