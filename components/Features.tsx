@@ -2,7 +2,9 @@ import React from 'react'
 
 const Features = () => {
   return (
-    <div>Features</div>
+  <fieldset className="bg-grey border-primaryCol border">
+        <legend className="align-center mx-auto w-1/2 text-center">HHH</legend>
+      </fieldset>
   )
 }
 
