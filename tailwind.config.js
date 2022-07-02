@@ -5,20 +5,24 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {
-      colors: {
-        primary: "hsl(180, 66 %, 49 %)",
-        primaryDark: "hsl(257, 27%, 26%)",
-        secondary: "hsl(0, 87%, 67%)",
-        neutralGray: "hsl(0, 0%, 75%)",
-        neutralGrayish: "hsl(257, 7%, 63%)",
-        neutralDark: "hsl(255, 11%, 22%)",
-        neutralViolet: "hsl(260, 8%, 14%)"
-      },
-      fontFamily: {
-        main: "18px"
-      }
+    extend: {},
+    colors: {
+      primary: "hsl(180, 66 %, 49 %)",
+      primaryDark: "hsl(257, 27%, 26%)",
+      secondary: "hsl(0, 87%, 67%)",
+      neutralGray: "hsl(0, 0%, 75%)",
+      neutralGrayish: "hsl(257, 7%, 63%)",
+      neutralDark: "hsl(255, 11%, 22%)",
+      neutralViolet: "hsl(260, 8%, 14%)"
     },
+    fontWeight: {
+      bold: 700,
+      light: 500
+    },
+    screens: {
+      Mobile: "375px",
+      Desktop: "1440px"
+    }
   },
   plugins: [],
 }
