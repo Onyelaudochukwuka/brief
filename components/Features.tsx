@@ -1,9 +1,10 @@
 import React from 'react'
+import Search from "./Search"
 
 const Features = () => {
   return (
-  <fieldset className="bg-grey border-primaryCol border">
-        <legend className="align-center mx-auto w-1/2 text-center">HHH</legend>
+  <fieldset className="bg-grey border-primaryCol border p-8">
+       <Search />
       </fieldset>
   )
 }
