@@ -2,7 +2,8 @@ import React, { ReactElement } from 'react'
 import type { AppProps } from 'next/app'
 import Navbar from "./Navbar"
 import Footer from "./Footer"
-const Layout = ({children}:any) => {
+import { ScriptProps } from "next/script"
+const Layout = ({children}:ScriptProps) => {
   return (
     <>
       <Navbar />
