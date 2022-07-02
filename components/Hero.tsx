@@ -4,7 +4,7 @@ import Image from "next/image";
 import image from "../images/illustration-working.svg";
 const Hero:NextComponentType = () => {
   return (
-    <div className="flex items-center p-3 lg:p-12 lg:flex-row flex-col-reverse gap-6">
+    <div className="flex items-center p-3 lg:p-12 lg:flex-row flex-col-reverse gap-6 text-neutralViolet">
       <div className="flex flex-col lg:gap-8 gap-4 justify-center">
         <div>
           <h1 className="lg:text-6xl text-4xl font-bold text-center lg:text-left">More than just shorter links</h1>

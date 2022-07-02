@@ -7,7 +7,7 @@ const Features = () => {
       <Search />
       <div>
         <div className="text-center">
-          <h3 className="text-3xl font-bold">Advanced Statistics</h3>
+          <h3 className="text-3xl font-bold text-neutralViolet">Advanced Statistics</h3>
           <p className="w-1/3 mx-auto text-neutralGrayish">Track how your links are performing across the web with our 
   advanced statistics dashboard.</p>
         </div>
