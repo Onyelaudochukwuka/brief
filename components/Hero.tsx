@@ -7,9 +7,10 @@ const Hero:NextComponentType = () => {
       <div>
         <div>
           <h1>More than just shorter links</h1>
-          <p></p>
+          <p>Build your brand's recognition and get detailed insights 
+  on how your links are performing.</p>
         </div>
-        <span></span>
+        <span className="px-5 py-3 bg-primaryCol rounded-full text-white hover:bg-primaryCol/75 cursor-pointer">Get Started</span>
       </div>
     </div>
   )
