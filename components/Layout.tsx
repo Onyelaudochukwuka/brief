@@ -1,10 +1,14 @@
-import React from 'react'
-import type { NextComponentType } from 'next'
-const Layout: NextComponentType = ({children} :IntrinsicA) => {
+import React, { ReactElement } from 'react'
+import type { AppProps } from 'next/app'
+import Navbar from "./Navbar"
+import Footer from "./Footer"
+const Layout = ({children}:any) => {
   return (
-      <>
-          {children}
-      </>
+    <>
+      <Navbar />
+      {children}
+      <Footer />
+    </>
   )
 }
 
