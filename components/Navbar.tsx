@@ -11,7 +11,7 @@ const Navbar = () => {
           </div>
           <div>
               <Link href="login"><span>Login</span></Link>
-              <Link href="login"><span className="p-4 bg-primary">Sign Up</span></Link>
+              <Link href="login"><span className="px-5 py-2 bg-primaryCol rounded-full text-white">Sign Up</span></Link>
           </div>
     </div>
   )
