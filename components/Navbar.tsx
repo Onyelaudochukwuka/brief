@@ -3,8 +3,8 @@ import Link from "next/link"
 import { NextComponentType } from "next"
 const Navbar:NextComponentType = () => {
   return (
-      <div className="flex lg:flex-row flex-col gap-12 p-6 items-center font-bold">
-          <span className="font-bold text-xl">Shortly</span>
+      <div className="flex lg:flex-row flex-col gap-12 p-6 items-center font-bold text-base">
+          <span className="font-bold text-2xl">Shortly</span>
           <div className="flex w-3/4 float-right ml-auto items-center">
           <div className="hidden lg:flex flex-row gap-10 text-neutralGrayish float-left mr-auto grow">
               <span className="hover:text-neutralViolet cursor-pointer">Features</span>
