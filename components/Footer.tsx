@@ -21,6 +21,13 @@ const Footer = () => {
           <span>Developers</span>
           <span>Support</span>
         </div>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       </>
   )
