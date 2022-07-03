@@ -3,7 +3,8 @@ import React from 'react'
 const Footer = () => {
   return (
       <>
-      <div>
+      <div className="bg-[url('../images/bg-boost-desktop.svg')]">
+        
       </div> 
       </>
   )
