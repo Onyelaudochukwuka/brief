@@ -15,6 +15,12 @@ const Footer = () => {
           <span>Broadcasting Links</span>
           <span>Analytics</span>
         </div>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       </>
   )
