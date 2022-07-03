@@ -9,7 +9,12 @@ const Footer = () => {
       </div> 
       <div>
         <span>Shortly</span>
-        <div></div>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       </>
   )
