@@ -10,10 +10,10 @@ const Footer = () => {
       <div>
         <span>Shortly</span>
         <div>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+          <span>Features</span>
+          <span>Link Shortening</span>
+          <span>Broadcasting Links</span>
+          <span>Analytics</span>
         </div>
       </div>
       </>
