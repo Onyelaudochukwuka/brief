@@ -16,10 +16,10 @@ const Footer = () => {
           <span>Analytics</span>
         </div>
         <div>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+          <span>Resources</span>
+          <span>Blog</span>
+          <span>Developers</span>
+          <span>Support</span>
         </div>
       </div>
       </>
