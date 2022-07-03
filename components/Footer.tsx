@@ -8,7 +8,8 @@ const Footer = () => {
         <span>Get Started</span>
       </div> 
       <div>
-        
+        <span>Shortly</span>
+        <div></div>
       </div>
       </>
   )
