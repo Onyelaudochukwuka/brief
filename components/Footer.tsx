@@ -7,7 +7,9 @@ const Footer = () => {
         <h1>Boost your links today</h1>
         <span>Get Started</span>
       </div> 
-      
+      <div>
+        
+      </div>
       </>
   )
 }
