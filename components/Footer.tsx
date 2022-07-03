@@ -22,7 +22,13 @@ const Footer = () => {
           <span>Support</span>
         </div>
         <div>
-          <span></span>
+          <span>Company</span>
+          <span>About</span>
+          <span>Our Teams</span>
+          <span>Careers</span>
+          <span>Contact</span>
+        </div>
+        <div>
           <span></span>
           <span></span>
           <span></span>
