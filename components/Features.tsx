@@ -20,7 +20,7 @@ const Features = () => {
             <legend className="p-4 bg-primaryDark w-fit rounded-full lg:ml-8 mx-auto"><span className="w-10 h-10 block p-0 m-0 mx-auto"><Image src={icon1} layout="responsive" /></span> </legend>
             <div className="px-6 py-8 flex flex-col gap-4">
               <h1 className="text-xl font-bold text-center">Brand Recognition</h1>
-              <p className="lg:w-full w-3/4 text-center lg:text-left text-base mx-auto">  Boost your brand recognition with each click. Generic links don’t 
+              <p className="lg:w-full text-center lg:text-left text-base mx-auto text-neutralGrayish">  Boost your brand recognition with each click. Generic links don’t 
               mean a thing. Branded links help instil confidence in your content</p>
             </div>
           </fieldset>
@@ -28,7 +28,7 @@ const Features = () => {
             <legend className="p-4 bg-primaryDark w-fit rounded-full lg:ml-8 mx-auto"><span className="w-10 h-10 block p-0 m-0"><Image src={icon2} layout="responsive" /></span> </legend>
             <div className="px-6 py-8 flex flex-col gap-4">
             <h1 className="text-xl font-bold text-center">Detailed Records</h1>
-              <p className="lg:w-full w-3/4 text-center lg:text-left text-base mx-auto">   Gain insights into who is clicking your links. Knowing when and where 
+              <p className="lg:w-full text-center lg:text-left text-base mx-auto text-neutralGrayish">   Gain insights into who is clicking your links. Knowing when and where 
              people engage with your content helps inform better decisions.</p>
             </div>
           </fieldset>
@@ -36,7 +36,7 @@ const Features = () => {
             <legend className="p-4 bg-primaryDark w-fit rounded-full lg:ml-8 mx-auto"><span className="w-10 h-10 block p-0 m-0"><Image src={icon3} layout="responsive" /></span> </legend>
             <div className="px-6 py-8 flex flex-col gap-4">
             <h1 className="text-xl font-bold text-center">Fully Customizable</h1>
-              <p className="lg:w-full  w-3/4 ttext-center lg:text-left text-base mx-auto">    Improve brand awareness and content discoverability through customizable 
+              <p className="lg:w-full text-center lg:text-left text-base mx-auto text-neutralGrayish">    Improve brand awareness and content discoverability through customizable 
              links, supercharging audience engagement.</p>
             </div>
           </fieldset>
