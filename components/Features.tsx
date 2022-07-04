@@ -11,7 +11,7 @@ const Features = () => {
       <div className="flex flex-col gap-10">
         <div className="text-center flex flex-col gap-2">
           <h3 className="text-3xl font-bold text-neutralViolet">Advanced Statistics</h3>
-          <p className="w-1/3 mx-auto text-neutralGrayish">Track how your links are performing across the web with our 
+          <p className="lg:w-1/3 mx-auto text-neutralGrayish">Track how your links are performing across the web with our 
   advanced statistics dashboard.</p>
         </div>
         <div className="flex lg:flex-row flex-col gap-8 lg:p-28 -mt-8 items-center">
