@@ -21,7 +21,7 @@ const Features = () => {
             <div className="px-6 py-8 flex flex-col gap-4">
               <h1 className="text-xl font-bold text-center">Brand Recognition</h1>
               <p className="lg:w-full w-3/4 text-center lg:text-left text-base mx-auto">  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content</p>
+              mean a thing. Branded links help instil confidence in your content</p>
             </div>
           </fieldset>
           <fieldset className="w-full p-1 bg-white lg:mt-20 rounded shadow-lg shadow-neutralGrayish/5">
@@ -29,7 +29,7 @@ const Features = () => {
             <div className="px-6 py-8 flex flex-col gap-4">
             <h1 className="text-xl font-bold text-center">Detailed Records</h1>
               <p className="lg:w-full w-3/4 text-center lg:text-left text-base mx-auto">   Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.</p>
+             people engage with your content helps inform better decisions.</p>
             </div>
           </fieldset>
           <fieldset className="w-full p-1 bg-white lg:mt-40 rounded shadow-lg shadow-neutralGrayish/5">
@@ -37,9 +37,10 @@ const Features = () => {
             <div className="px-6 py-8 flex flex-col gap-4">
             <h1 className="text-xl font-bold text-center">Fully Customizable</h1>
               <p className="lg:w-full  w-3/4 ttext-center lg:text-left text-base mx-auto">    Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.</p>
+             links, supercharging audience engagement.</p>
             </div>
           </fieldset>
+          <div className="h-full m-auto align-middle mt-28 bg-primaryCol w-2.5 absolute -z-10 flex lg:hidden self-center"></div>
         </div>
       </div>
       </fieldset>

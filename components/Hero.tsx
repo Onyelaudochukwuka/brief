@@ -7,8 +7,8 @@ const Hero:NextComponentType = () => {
     <div className="flex items-center p-3 lg:p-12 lg:flex-row flex-col-reverse gap-6 text-neutralViolet">
       <div className="flex flex-col lg:gap-8 gap-4 justify-center">
         <div>
-          <h1 className="lg:text-6xl text-4xl font-bold text-center lg:text-left">More than just shorter links</h1>
-          <p className="lg:w-3/4 text-base text-neutralGrayish lg:text-lg lg:text-left text-center">Build your brand's recognition and get detailed insights 
+          <h1 className="lg:text-6xl text-4xl font-bold text-center lg:text-left w-full">More than just shorter links</h1>
+          <p className="lg:w-3/4 text-base text-neutralGrayish lg:text-lg lg:text-left text-center w-full">Build your brand's recognition and get detailed insights 
   on how your links are performing.</p>
         </div>
         <span className="lg:px-8 lg:py-3 p-4 px-10  justify-center bg-primaryCol rounded-full text-white hover:bg-primaryCol/75 cursor-pointer w-fit mx-auto lg:mx-0 font-[600]">Get Started</span>
