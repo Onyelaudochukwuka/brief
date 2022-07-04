@@ -6,7 +6,7 @@ import icon2 from '../images/icon-detailed-records.svg';
 import icon3 from '../images/icon-fully-customizable.svg';
 const Features = () => {
   return (
-  <fieldset className="bg-neutralGray/10 p-8">
+  <fieldset className="bg-neutralGray/10 p-8 mt-12 lg:mt-0">
       <Search />
       <div className="flex flex-col gap-10 lg:gap-0">
         <div className="text-center flex flex-col gap-2">

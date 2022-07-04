@@ -11,7 +11,7 @@ const Hero:NextComponentType = () => {
           <p className="lg:w-3/4 text-base text-neutralGrayish lg:text-lg lg:text-left text-center">Build your brand's recognition and get detailed insights 
   on how your links are performing.</p>
         </div>
-        <span className="px-8 py-3 justify-center bg-primaryCol rounded-full text-white hover:bg-primaryCol/75 cursor-pointer w-fit mx-auto lg:mx-0 font-[600]">Get Started</span>
+        <span className="lg:px-8 lg:py-3 p-4 px-10  justify-center bg-primaryCol rounded-full text-white hover:bg-primaryCol/75 cursor-pointer w-fit mx-auto lg:mx-0 font-[600]">Get Started</span>
       </div>
       <div className="lg:w-3/4 w-full h-auto block p-0 m-0"><Image src={image} layout="responsive" /></div>
      
