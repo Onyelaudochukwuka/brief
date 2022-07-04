@@ -7,7 +7,7 @@ import icon3 from '../images/icon-fully-customizable.svg';
 import { NextComponentType } from "next";
 const Features:NextComponentType = () => {
   return (
-  <fieldset className="bg-neutralGray/10 p-8 mt-12 lg:mt-0">
+  <fieldset className="bg-neutralGray/10 p-8 mt-12 lg:mt-0 pb-20">
       <Search />
       <div className="flex flex-col gap-10 lg:gap-0">
         <div className="text-center flex flex-col gap-2">
@@ -20,7 +20,7 @@ const Features:NextComponentType = () => {
           <fieldset className="w-full bg-white rounded shadow-lg shadow-neutralGrayish/5 p-1">
             <legend className="p-4 bg-primaryDark w-fit rounded-full lg:ml-8 mx-auto"><span className="w-10 h-10 block p-0 m-0 mx-auto"><Image src={icon1} layout="responsive" /></span> </legend>
             <div className="px-6 py-8 flex flex-col gap-4">
-              <h1 className="text-xl font-bold text-center">Brand Recognition</h1>
+              <h1 className="text-xl font-bold text-center lg:text-left">Brand Recognition</h1>
               <p className="lg:w-full text-center lg:text-left text-base mx-auto text-neutralGrayish">  Boost your brand recognition with each click. Generic links don’t 
               mean a thing. Branded links help instil confidence in your content</p>
             </div>
@@ -28,7 +28,7 @@ const Features:NextComponentType = () => {
           <fieldset className="w-full p-1 bg-white lg:mt-20 rounded shadow-lg shadow-neutralGrayish/5">
             <legend className="p-4 bg-primaryDark w-fit rounded-full lg:ml-8 mx-auto"><span className="w-10 h-10 block p-0 m-0"><Image src={icon2} layout="responsive" /></span> </legend>
             <div className="px-6 py-8 flex flex-col gap-4">
-            <h1 className="text-xl font-bold text-center">Detailed Records</h1>
+            <h1 className="text-xl font-bold text-center lg:text-left">Detailed Records</h1>
               <p className="lg:w-full text-center lg:text-left text-base mx-auto text-neutralGrayish">   Gain insights into who is clicking your links. Knowing when and where 
              people engage with your content helps inform better decisions.</p>
             </div>
@@ -36,7 +36,7 @@ const Features:NextComponentType = () => {
           <fieldset className="w-full p-1 bg-white lg:mt-40 rounded shadow-lg shadow-neutralGrayish/5">
             <legend className="p-4 bg-primaryDark w-fit rounded-full lg:ml-8 mx-auto"><span className="w-10 h-10 block p-0 m-0"><Image src={icon3} layout="responsive" /></span> </legend>
             <div className="px-6 py-8 flex flex-col gap-4">
-            <h1 className="text-xl font-bold text-center">Fully Customizable</h1>
+            <h1 className="text-xl font-bold text-center lg:text-left">Fully Customizable</h1>
               <p className="lg:w-full text-center lg:text-left text-base mx-auto text-neutralGrayish">    Improve brand awareness and content discoverability through customizable 
              links, supercharging audience engagement.</p>
             </div>
