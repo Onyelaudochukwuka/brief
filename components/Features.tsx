@@ -4,7 +4,8 @@ import Image from "next/image"
 import icon1 from '../images/icon-brand-recognition.svg';
 import icon2 from '../images/icon-detailed-records.svg';
 import icon3 from '../images/icon-fully-customizable.svg';
-const Features = () => {
+import { NextComponentType } from "next";
+const Features:NextComponentType = () => {
   return (
   <fieldset className="bg-neutralGray/10 p-8 mt-12 lg:mt-0">
       <Search />

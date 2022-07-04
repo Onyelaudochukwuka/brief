@@ -3,7 +3,8 @@ import type { AppProps } from 'next/app'
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import { ScriptProps } from "next/script"
-const Layout = ({children}:ScriptProps) => {
+import { NextComponentType } from "next"
+const Layout:NextComponentType = ({children}:ScriptProps) => {
   return (
     <>
       <Navbar />
