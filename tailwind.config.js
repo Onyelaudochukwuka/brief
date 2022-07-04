@@ -5,6 +5,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    extend: {},
     colors: {
       primaryCol: "rgb(42, 207, 207)",
       primaryDark: "rgb(59, 48, 84)",
@@ -13,7 +14,8 @@ module.exports = {
       neutralGrayish: "rgb(158, 154, 167)",
       neutralDark: "rgb(53, 50, 62)",
       neutralViolet: "rgb(35, 33, 39)",
-      white: "#fff"
+      white: "#fff",
+      transparent: "transparent"
     },
     fontWeight: {
       bold: 700,
