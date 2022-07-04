@@ -8,14 +8,14 @@ const Features = () => {
   return (
   <fieldset className="bg-neutralGray/10 p-8">
       <Search />
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 lg:gap-0">
         <div className="text-center flex flex-col gap-2">
           <h3 className="text-3xl font-bold text-neutralViolet">Advanced Statistics</h3>
           <p className="lg:w-1/3 mx-auto text-neutralGrayish">Track how your links are performing across the web with our 
   advanced statistics dashboard.</p>
         </div>
-        <div className="flex lg:flex-row flex-col gap-8 lg:p-28 -mt-8 items-center">
-          <div className="w-3/4 m-auto align-middle mt-8 bg-primaryCol h-2.5 absolute -z-10 hidden"></div>
+        <div className="flex lg:flex-row flex-col gap-8 lg:px-28 -mt-8 items-center">
+          <div className="w-3/4 m-auto align-middle mt-8 bg-primaryCol h-2.5 absolute -z-10 hidden lg:flex"></div>
           <fieldset className="w-full bg-white rounded shadow-lg shadow-neutralGrayish/5 p-1">
             <legend className="p-4 bg-primaryDark w-fit rounded-full lg:ml-8 mx-auto"><span className="w-10 h-10 block p-0 m-0 mx-auto"><Image src={icon1} layout="responsive" /></span> </legend>
             <div className="px-6 py-8 flex flex-col gap-4">
