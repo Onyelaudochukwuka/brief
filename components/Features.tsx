@@ -40,7 +40,7 @@ const Features = () => {
              links, supercharging audience engagement.</p>
             </div>
           </fieldset>
-          <div className="h-full m-auto align-middle mt-28 bg-primaryCol w-2.5 absolute -z-10 flex lg:hidden self-center"></div>
+          <div className="h-full m-auto align-middle mt-36 bg-primaryCol w-2.5 absolute -z-10 flex lg:hidden self-center"></div>
         </div>
       </div>
       </fieldset>
