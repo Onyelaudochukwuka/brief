@@ -1,11 +1,9 @@
-import { NextComponentType } from "next"
-import { ScriptProps } from "next/script"
 import React from 'react'
-interface properties{
+type properties={
     query?: String;
     result?: String;
 }
-const Result:NextComponentType = ({query, result}:properties) => {
+const Result:React.FC<properties> = ({query, result}) => {
   return (
       <div className="gap">
           <span>{query}</span>

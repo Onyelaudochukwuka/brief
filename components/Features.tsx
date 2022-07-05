@@ -6,7 +6,7 @@ import icon2 from '../images/icon-detailed-records.svg';
 import icon3 from '../images/icon-fully-customizable.svg';
 import { NextComponentType } from "next";
 import Result from "./Result";
-const Features:NextComponentType = () => {
+const Features:React.FC = () => {
   return (
   <fieldset className="bg-neutralGray/10 p-8 mt-12 lg:mt-0 pb-20">
       <Search />
