@@ -10,7 +10,7 @@ const Features:React.FC = () => {
   return (
   <fieldset className="bg-neutralGray/10 p-8 mt-12 lg:mt-0 pb-20">
       <Search />
-      <Result query={"www.google.com"} result={"https://linky/gFeFbS"} />
+      <Result query={"https://www.google.com"} result={"https://linky/gFeFbS"} />
       <div className="flex flex-col gap-10 lg:gap-0">
         <div className="text-center flex flex-col gap-2">
           <h3 className="text-3xl font-bold text-neutralViolet">Advanced Statistics</h3>
