@@ -5,9 +5,12 @@ type properties={
 }
 const Result:React.FC<properties> = ({query, result}) => {
   return (
-      <div className="gap">
+      <div className="flex gap">
           <span>{query}</span>
-          <span>{result}</span>
+          <span>
+              <span>{result}</span>
+              <span></span>
+          </span>
       </div>
   )
 }
