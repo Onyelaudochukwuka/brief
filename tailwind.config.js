@@ -7,15 +7,11 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      primaryCol: "rgb(42, 207, 207)",
-      primaryDark: "rgb(59, 48, 84)",
-      secondary: "rgb(244, 98, 98)",
-      neutralGray: "rgb(191, 191, 191)",
-      neutralGrayish: "rgb(158, 154, 167)",
-      neutralDark: "rgb(53, 50, 62)",
-      neutralViolet: "rgb(35, 33, 39)",
-      white: "#fff",
-      transparent: "transparent"
+      darkPrimary: "#181E20",
+      dark: "#02314D",
+      neutral: "#045C94",
+      lightNeutral: "#FFBB1C",
+      light: "#F2F4F5"
     },
     fontWeight: {
       bold: 700,
