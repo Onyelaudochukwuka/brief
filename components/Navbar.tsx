@@ -15,7 +15,7 @@ const Navbar: NextComponentType = () => {
         <Image src={logo} layout="responsive" />
         </div>
         </div>
-      <div className="hidden lg:flex basis-3/5 w-full items-center">
+      <div className={`hidden lg:flex basis-3/5 w-full items-center`}>
         <div className="flex w-full basis-3/5">
           <span className="basis-1/3 hover:text-neutral transition-all duration-500 ease-in-out">
             <Link href="/">Why briefly</Link>
