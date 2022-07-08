@@ -11,8 +11,8 @@ const Home: NextPage = () => {
         <link rel="shortcut icon" href="../public/Brief.ico" type="image/x-icon" />
       </Head>
     <Hero />
-      <Features />
       <Shorten />
+      <Features />
     </>
   )
 }
