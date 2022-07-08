@@ -6,11 +6,11 @@ import { ScriptProps } from "next/script"
 import { NextComponentType } from "next"
 const Layout = ({children}:any) => {
   return (
-    <>
+    <div className="bg-darkPrimary">
       <Navbar />
       {children}
       <Footer />
-    </>
+    </div>
   )
 }
 
