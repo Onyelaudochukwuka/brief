@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Link from "next/link"
-import { NextComponentType } from "next"
+import Link from "next/link";
+import { NextComponentType } from "next";
+import logo from '*.svg';
+console.log(logo);
 const Navbar: NextComponentType = () => {
   const [drop, setDrop] = useState(true);
   useEffect(() => {
@@ -9,7 +11,7 @@ const Navbar: NextComponentType = () => {
   return (
     <div>
       
-   </div>
+    </div>
  ) 
 }
 
