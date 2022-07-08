@@ -14,10 +14,6 @@ module.exports = {
       light: "#F2F4F5",
       navBar: "#162025"
     },
-    fontWeight: {
-      bold: 700,
-      light: 500
-    },
   },
   plugins: [],
 }
