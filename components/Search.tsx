@@ -3,7 +3,7 @@ import React from 'react'
 
 const Search:NextComponentType = () => {
   return (
-    <div>
+    <div className="">
       
     </div>
   )
