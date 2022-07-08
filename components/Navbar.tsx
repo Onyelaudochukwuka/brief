@@ -37,11 +37,9 @@ const Navbar: NextComponentType = () => {
         </div>
       </div>
       <div className="float-right ml-auto">
-        <div className="w-14 h-1 bg-light rounded-full
-        after:w-14 after:h-1 after:bg-light after:rounded-full after:absolute after:-mt-2.5
-        before:w-14 before:h-1 before:bg-light before:rounded-full before:absolute before:mt-2.5
-                
-        "></div>
+        <div className="w-14 h-1 bg-light rounded-full cursor-pointer
+        after:w-14 after:h-1 after:bg-light after:rounded-full after:absolute after:-mt-2.5 after:cursor-pointer
+        before:w-14 before:h-1 before:bg-light before:rounded-full before:absolute before:mt-2.5 before:cursor-pointer"></div>
       </div>
     </div>
  ) 
