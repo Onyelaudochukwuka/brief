@@ -9,7 +9,7 @@ const Navbar: NextComponentType = () => {
     console.log(drop);
   },[drop])
   return (
-    <div className="flex w-full p-6 items-center text-light bg-dark">
+    <div className="flex w-full p-6 items-center text-light bg-navBar font-semibold">
       <div className="basis-2/5">
       <div className="w-24 h-fit">
         <Image src={logo} layout="responsive" />
