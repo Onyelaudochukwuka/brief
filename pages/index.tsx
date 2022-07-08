@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Brief</title>
-        <link rel="icon" href="../public/Brief.svg"/>
+        <link rel="shortcut icon" href="../public/Brief.ico" type="image/x-icon" />
       </Head>
     <Hero />
       <Features />
