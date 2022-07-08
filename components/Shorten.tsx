@@ -1,7 +1,7 @@
 import { NextComponentType } from "next";
 import React from 'react'
 
-const Search:NextComponentType = () => {
+const Shorten:NextComponentType = () => {
   return (
     <div className="">
       
@@ -9,4 +9,4 @@ const Search:NextComponentType = () => {
   )
 }
 
-export default Search;
+export default Shorten;
