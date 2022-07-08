@@ -6,6 +6,10 @@ import { Features, Hero, Shorten } from "../components";
 const Home: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Brief</title>
+        <link rel="icon" href="../public/Brief.svg"/>
+      </Head>
     <Hero />
       <Features />
       <Shorten />
