@@ -4,7 +4,7 @@ import { NextComponentType } from "next";
 import Result from "./Result";
 const Features:React.FC = () => {
   return (
-    <div>
+    <div className="py-16">
       
   </div>
   )
