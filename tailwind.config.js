@@ -11,7 +11,8 @@ module.exports = {
       dark: "#02314D",
       neutral: "#045C94",
       lightNeutral: "#FFBB1C",
-      light: "#F2F4F5"
+      light: "#F2F4F5",
+      navBar: "#162025"
     },
     fontWeight: {
       bold: 700,
