@@ -5,3 +5,8 @@
 body{
 font-family: 'Montserrat', sans-serif;
 }
+.linear{
+    background: linear-gradient(156.48deg, rgba(2, 49, 77, 0.6) 0%, rgba(2, 49, 77, 0.1) 101.49%);
+    backdrop-filter: blur(50px);
+    border-radius: 45px;
+}
