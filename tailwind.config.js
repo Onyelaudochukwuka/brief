@@ -12,7 +12,8 @@ module.exports = {
       neutral: "#045C94",
       lightNeutral: "#FFBB1C",
       light: "#F2F4F5",
-      navBar: "#162025"
+      navBar: "#162025",
+      transparent: "transparent",
     },
   },
   plugins: [],
