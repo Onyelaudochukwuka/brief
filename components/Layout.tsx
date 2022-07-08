@@ -4,7 +4,7 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 import { ScriptProps } from "next/script"
 import { NextComponentType } from "next"
-const Layout:NextComponentType = ({children}:ScriptProps) => {
+const Layout = ({children}:any) => {
   return (
     <>
       <Navbar />
