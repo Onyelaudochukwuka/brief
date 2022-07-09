@@ -31,7 +31,7 @@ const Features: NextComponentType = () => {
       </span>
       <div className="flex lg:flex-row flex-col px-8 gap-12 justify-between items-center">
         {details.map(({ icon, heading, details }) =>
-          <div className="self-stretch linear flex flex-col items-center w-fit p-12 justify-between gap-6 pr-0 mx-auto">
+          <div key={heading} className="self-stretch linear flex flex-col items-center w-fit p-12 justify-between gap-6 pr-0 mx-auto">
             <div className="h-auto w-5/12 align-bottom my-auto mr-12"><Image src={icon} layout="responsive" /></div>
             <div className="flex flex-col gap-2">
               <h1 className="text-xl font-bold">{heading}</h1>
