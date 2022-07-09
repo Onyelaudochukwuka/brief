@@ -29,9 +29,9 @@ const Features: NextComponentType = () => {
         <h2 className="text-center font-bold text-2xl">The Link Shortener You Can Trust</h2>
         <h4 className="text-center font-semibold text-base">Add more credibility to your brand with a link everyone loves to click</h4>
       </span>
-      <div className="flex lg:flex-row flex-col px-8 gap-12 justify-between">
+      <div className="flex lg:flex-row flex-col px-8 gap-12 justify-between items-center">
         {details.map(({ icon, heading, details }) =>
-          <div className="self-stretch linear flex flex-col items-center w-fit p-12 justify-between gap-6 pr-0">
+          <div className="self-stretch linear flex flex-col items-center w-fit p-12 justify-between gap-6 pr-0 mx-auto">
             <div className="h-auto w-5/12 align-bottom my-auto mr-12"><Image src={icon} layout="responsive" /></div>
             <div className="flex flex-col gap-2">
               <h1 className="text-xl font-bold">{heading}</h1>
