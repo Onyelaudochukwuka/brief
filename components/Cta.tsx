@@ -31,7 +31,7 @@ const Cta:NextComponentType = () => {
             const [detailExpand, setDetailExpand] = useState(false);
             return (
               
-              <div onClick={()=>setDetailExpand(!detailExpand)} className={`flex cursor-pointer lg:w-2/5 w-3/4 border-b flex-col border-light mx-auto justify-between text-light items-center overflow-y-hidden ${detailExpand &&`gap-3 py-4 transition-[gap,padding] duration-300 ease-in-out`}`}>
+              <div key={header} onClick={()=>setDetailExpand(!detailExpand)} className={`flex cursor-pointer lg:w-2/5 w-3/4 border-b flex-col border-light mx-auto justify-between text-light items-center overflow-y-hidden ${detailExpand &&`gap-3 py-4 transition-[gap,padding] duration-300 ease-in-out`}`}>
                 <span className="flex p-2 items-center justify-between w-full">
                   <h4 className="text-lg font-bold">{header}</h4>
                 <span className={`block w-8 h-8 ${detailExpand && `rotate-45 transition duration-500 ease-in`} transition duration-500 ease-out`}><Image src={icon} layout="responsive" /></span>
