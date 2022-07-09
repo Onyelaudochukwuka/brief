@@ -44,9 +44,9 @@ const Cta:NextComponentType = () => {
           
         </div>
       </div>
-      <div className="flex flex-col text-center text-light">
-        <h1 className="tracking-widest text-xl font-bold">Get A Brief Link Today</h1>
-        <span><Link href="/">Get Started</Link>/</span>
+      <div className="flex flex-col text-center text-light items-center gap-8">
+        <h1 className="tracking-wide text-xl font-bold">Get A Brief Link Today</h1>
+        <span className="px-4 py-2.5 rounded-lg bg-neutral text-light font-bold w-fit"><Link href="/">Get Started</Link></span>
       </div>
     </div>
   )
