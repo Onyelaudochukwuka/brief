@@ -21,7 +21,7 @@ const Navbar: NextComponentType = () => {
             <Link href="/">Why briefly</Link>
           </span>
           <span className="basis-1/3 hover:text-neutral transition-all duration-500 ease-in-out">
-            <Link href="/">Products</Link>
+            <Link href="/products">Products</Link>
           </span>
           <span className="basis-1/3 hover:text-neutral transition-all duration-500 ease-in-out">
             <Link href="/">Resources</Link>
