@@ -1,12 +1,12 @@
 import brief from './brief.svg';
 import browserIcon from './browserIcon.svg';
-import copyIllustration from './copyIllustration.svg';
-import monstersIllustration from 'monstersIllustration.svg';
-import fullyCustomizable from 'fullyCustomizable.svg';
-import arrow from 'arrow.svg';
-import facebook from 'facebook.svg';
-import twitter from 'twitter.svg';
-import instagram from 'instagram.svg';
+import detailed from './copyIllustration.svg';
+import brand from './monstersIllustration.svg';
+import customizable from './fullyCustomizable.svg';
+import arrow from './icons/arrow.svg';
+import facebook from './icons/facebook.svg';
+import twitter from './icons/twitter.svg';
+import instagram from './icons/instagram.svg';
 
 
-export { brief, browserIcon, copyIllustration, monstersIllustration, fullyCustomizable, arrow, facebook, twitter, instagram };
+export  { brief, browserIcon, customizable, brand, detailed, arrow, facebook, twitter, instagram };
