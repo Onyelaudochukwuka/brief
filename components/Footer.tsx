@@ -4,8 +4,11 @@ import Cta from "./Cta";
 import Image from "next/image";
 const Footer:NextComponentType = () => {
   return (
-    <div className="">
-      
+    <div className="flex w-full p-6 items-center text-light bg-navBar font-semibold">
+      <div>
+
+      </div>
+      <div></div>
     </div>
   )
 }
