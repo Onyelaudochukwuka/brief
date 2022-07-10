@@ -1,9 +1,7 @@
 import React from 'react'
 import Image from "next/image"
 import { NextComponentType } from "next";
-import brand from '../public/monstersIllustration.svg';
-import detailed from '../public/copyIllustration.svg';
-import customizable from '../public/fullyCustomizable.svg';
+import { brand,detailed,customizable } from '../public';
 
 const details = [
   {
