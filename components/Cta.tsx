@@ -2,7 +2,7 @@ import { NextComponentType } from "next"
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from 'react';
-import icon from '../public/icons/arrow.svg';
+import {arrow } from '../public';
 const data = [
   {
     header: "What is an URL shortener",
@@ -30,7 +30,7 @@ const Cta:NextComponentType = () => {
               <div key={header} onClick={()=>setDetailExpand(!detailExpand)} className={`flex cursor-pointer lg:w-2/5 w-3/4 border-b flex-col border-light mx-auto justify-between text-light items-center overflow-y-hidden ${detailExpand &&`gap-3 py-4 transition-[gap,padding] duration-300 ease-in-out`}`}>
                 <span className="flex p-2 items-center justify-between w-full">
                   <h4 className="text-lg font-bold">{header}</h4>
-                <span className={`block w-8 h-8 ${detailExpand && `rotate-45 transition duration-500 ease-in`} transition duration-500 ease-out`}><Image src={icon} layout="responsive" /></span>
+                <span className={`block w-8 h-8 ${detailExpand && `rotate-45 transition duration-500 ease-in`} transition duration-500 ease-out`}><Image src={arrow} layout="responsive" /></span>
                 </span>
                 <div className={`${detailExpand ? `max-h-fit transition-[height] duration-1000 ease-in` : `h-0 transition-[height] duration-1000 ease-out`}`}><p className="font-semibold text-sm">{details}</p></div>
               </div>
