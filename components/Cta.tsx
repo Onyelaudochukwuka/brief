@@ -13,12 +13,8 @@ const data = [
     details: "Shorter URLs Make Sharing Easier and also giving a short link which is more memorable means users can comeback to your site without needing to search through their history tab for hour's."
   },
   {
-    header: "What is a Custom Url Shortener",
-    details: "Why choose brief"
-  },
-  {
     header: "Why choose brief",
-    details: ""
+    details: "We offer fast link redirection, which means you don't have to wait for your page to load twice"
   }
 ]
 const Cta:NextComponentType = () => {
@@ -36,7 +32,7 @@ const Cta:NextComponentType = () => {
                   <h4 className="text-lg font-bold">{header}</h4>
                 <span className={`block w-8 h-8 ${detailExpand && `rotate-45 transition duration-500 ease-in`} transition duration-500 ease-out`}><Image src={icon} layout="responsive" /></span>
                 </span>
-                <div className={`${detailExpand ? `h-24 transition-[height] duration-1000 ease-in` : `h-0 transition-[height] duration-1000 ease-out`}`}><p className="font-semibold text-sm">{details}</p></div>
+                <div className={`${detailExpand ? `max-h-fit transition-[height] duration-1000 ease-in` : `h-0 transition-[height] duration-1000 ease-out`}`}><p className="font-semibold text-sm">{details}</p></div>
               </div>
             )
           }
@@ -46,7 +42,7 @@ const Cta:NextComponentType = () => {
       </div>
       <div className="flex flex-col text-center text-light items-center gap-8">
         <h1 className="tracking-wide text-xl font-bold">Get A Brief Link Today</h1>
-        <span className="px-4 py-2.5 rounded-lg bg-neutral text-light font-bold w-fit"><Link href="/">Get Started</Link></span>
+        <span className="px-4 py-2.5 rounded-lg bg-neutral text-light font-bold w-fit hover:shadow-[3px_4px_2px_rgba(4,92,148,0.25),_0px_4px_2px_rgba(4,92,148,0.25),_4px_4px_2px_rgba(4,92,148,0.73),_3px_3px_2px_rgba(4,92,148,0.288)] tracking-wide hover:bg-dark shadow-[3px_4px_2px_rgba(2,49,77,0.25),_0px_4px_2px_rgba(2,49,77,0.25),_4px_4px_2px_rgba(2,49,77,0.73),_3px_3px_2px_rgba(2,49,77,0.288)]  transition-[box-shadow,background,color] duration-500 ease-in-out cursor-pointer"><Link href="/">Get Started</Link></span>
       </div>
     </div>
   )
