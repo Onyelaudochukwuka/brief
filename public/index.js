@@ -7,6 +7,7 @@ import arrow from './icons/arrow.svg';
 import facebook from './icons/facebook.svg';
 import twitter from './icons/twitter.svg';
 import instagram from './icons/instagram.svg';
+import pointer from './icons/pointer.svg';
 
 
-export  { brief, browserIcon, customizable, brand, detailed, arrow, facebook, twitter, instagram };
+export  { brief, browserIcon, customizable, brand, detailed, arrow, facebook, twitter, instagram, pointer };
