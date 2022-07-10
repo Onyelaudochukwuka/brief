@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Link from "next/link";
 import { NextComponentType } from "next";
-import logo from '../public/Brief.svg';
+import { brief as logo} from '../public';
 import Image from "next/image";
 const Navbar: NextComponentType = () => {
   const [drop, setDrop] = useState(true);
