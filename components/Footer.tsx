@@ -4,7 +4,7 @@ import Cta from "./Cta";
 import Image from "next/image";
 const Footer:NextComponentType = () => {
   return (
-    <div>
+    <div className="">
       
     </div>
   )
