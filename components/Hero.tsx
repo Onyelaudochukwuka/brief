@@ -2,7 +2,7 @@ import { NextComponentType } from "next"
 import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import browserIcon from "../public/browserIcon.svg";
+import { browserIcon } from "../public";
 const Hero:NextComponentType = () => {
   return (
     <div className="text-light lg:py-24 py-12 lg:px-12 flex px-8 lg:items-center lg:flex-row flex-col-reverse">
