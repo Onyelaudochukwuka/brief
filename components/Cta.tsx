@@ -14,7 +14,7 @@ const data = [
   },
   {
     header: "Why choose brief",
-    details: "We offer fast link redirection, which means you don't have to wait for your page to load twice"
+    details: "We offer fast link redirection, which means you don't have to wait for your page to load twice!"
   }
 ]
 const Cta:NextComponentType = () => {
