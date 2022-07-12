@@ -4,7 +4,6 @@ const Url = require('../../models/Url');
 const validUrl = require('valid-url');
 const shortid = require('shortid');
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-
   const { method } = req;
   const { longUrl } = req.body;
   const baseUrl = process.env.BASE_URL;
@@ -22,7 +21,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           if (url) {
             res.json(url);
           } else {
-            const shortUrl = baseUrl + '/' + urlCode;
+            const shortUrl = baseUrl + urlCode;
 
             url = new Url({
               longUrl,
