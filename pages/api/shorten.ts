@@ -14,19 +14,20 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         if (!validUrl.isUri(baseUrl)) {
         return res.status(401).json('invalid base url');
     }
-      const urlCode = shortid.generate();
+      const Code = shortid.generate();
+      const urlCode = customExt ? customExt : Code;
       if (validUrl.isUri(longUrl)) {
         try {
           let url = await Url.findOne({ longUrl });
           if (url) {
             res.json(url);
           } else {
-            const shortUrl = baseUrl + customExt;
+            const shortUrl = baseUrl + urlCode;
 
             url = new Url({
               longUrl,
               shortUrl,
-              urlCode: customExt,
+              urlCode,
               date: new Date()
             });
             await url.save();
