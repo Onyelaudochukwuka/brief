@@ -5,7 +5,7 @@ const validUrl = require('valid-url');
 const shortid = require('shortid');
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { method } = req;
-  const { longUrl } = req.body;
+  const { longUrl, customExt } = req.body;
   const baseUrl = process.env.BASE_URL;
   await dbConnect()
 
@@ -21,12 +21,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           if (url) {
             res.json(url);
           } else {
-            const shortUrl = baseUrl + urlCode;
+            const shortUrl = baseUrl + customExt;
 
             url = new Url({
               longUrl,
               shortUrl,
-              urlCode,
+              urlCode: customExt,
               date: new Date()
             });
             await url.save();
