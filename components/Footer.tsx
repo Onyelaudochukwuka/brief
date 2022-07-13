@@ -1,10 +1,11 @@
 import { NextComponentType } from "next";
-import React from 'react'
+import React, { useId } from 'react'
 import Cta from "./Cta";
 import Image from "next/image";
 import { facebook, instagram, twitter } from "../public";
 const icons = [facebook, instagram, twitter];
-const Footer:NextComponentType = () => {
+const Footer: NextComponentType = () => {
+  const ID = useId();
   return (
     <div className="flex flex-col w-full p-12 items-center text-light bg-navBar font-semibold mt-8 gap-4">
       <div className="flex w-full lg:items-baseline py-4 lg:flex-row flex-col lg:gap-0 gap-6 items-start">
@@ -33,7 +34,7 @@ const Footer:NextComponentType = () => {
         </span>
       </div>
       <div className="flex gap-4">
-        {icons.map((icon) => <span className="w-8 h-8 block cursor-pointer"><Image src={icon} layout="responsive" /></span>)}
+        {icons.map((icon,i) => <span key={ID + i} className="w-8 h-8 block cursor-pointer"><Image src={icon} layout="responsive" /></span>)}
       </div>
     </div>
   )
