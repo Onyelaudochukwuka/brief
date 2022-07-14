@@ -10,9 +10,11 @@ const Navbar: NextComponentType = () => {
   const { data: session } = useSession();
   const { push, asPath } = useRouter();
   const handleSignOut = async () => {
+    console.log('click');
     const data = await signOut({ redirect: false, callbackUrl: "/" });
     push(data.url);
   };
+  console.log(session);
   return (
     <div className="flex w-full p-6 items-center text-light bg-navBar font-semibold">
       <div className="basis-2/5">
@@ -38,7 +40,7 @@ const Navbar: NextComponentType = () => {
           </span>
         </div>
       </div>
-      <span onClick={()=>handleSignOut()}>SignOut</span>
+      <span onClick={handleSignOut}>SignOut</span>
       <div className="lg:hidden float-right ml-auto">
         <div className="w-14 h-1 bg-light rounded-full cursor-pointer
         after:w-14 after:h-1 after:bg-light after:rounded-full after:absolute after:-mt-2.5 after:cursor-pointer
