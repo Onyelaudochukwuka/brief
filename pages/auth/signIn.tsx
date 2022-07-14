@@ -1,11 +1,22 @@
 import React, { useState } from 'react'
 import { useSession, signIn as SignIn, signOut } from "next-auth/react";
 import { useRouter } from "next/router";
-const providers = [
-  'github', 'twitter', 'google'];
-const data = [{
-provid    
-},
+import { githubProvider, twitterProvider, googleProvider } from "../../public";
+import Image, { StaticImageData } from "next/image";
+type dataInt = {
+  provider: string;
+  icon: StaticImageData;
+  }
+const data:dataInt[] = [{
+  provider: "github",
+  icon: githubProvider
+}, {
+  provider: "twitter",
+  icon: twitterProvider
+  }, {
+  provider: "google",
+  icon: googleProvider
+}
 ]
 const signIn = () => {
   const { data: session, status } = useSession();
@@ -30,7 +41,7 @@ const signIn = () => {
         <button type={"submit"} className="py-2 px-4 w-full rounded-lg bg-gray-100 hover:bg-gray-300 transition duration-500 ease-in cursor-pointer">Login</button>
       </form>
     <div className="flex flex-col gap-3">
-      {providers.map((provider) => <span key={provider} onClick={()=>SignIn(provider)} className="p-3 px-6 bg-gray-100 hover:bg-gray-300 rounded-lg transition duration-500 ease-in cursor-pointer capitalize">Sign In With {provider}</span>)}
+        {data.map((data) => <div key={data.provider} onClick={() => SignIn(data.provider)} className="p-3 px-6 bg-gray-100 hover:bg-gray-300 rounded-sm transition duration-500 ease-in cursor-pointer capitalize"><span className="w-8 h-8"><Image src={data.icon} className="responsive" /></span><span>Sign In With {data.provider}</span></div>)}
     </div>
     </div>
   )
