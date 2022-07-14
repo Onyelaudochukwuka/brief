@@ -3,8 +3,6 @@ require('dotenv').config();
 import { MongoClient } from "mongodb";
 const MONGODB_PARAMS = process.env.MONGODB_USERNAME && process.env.MONGODB_PASSWORD;
 const uri = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}$1@cluster0.bmcxh.mongodb.net/auth?retryWrites=true&w=majority`;
-console.log(process.env.MONGODB_USERNAME , process.env.MONGODB_PASSWORD)
-console.log(uri)
 const options = {
     useUnifiedTopology: true,
     useNewUrlParser: true,
