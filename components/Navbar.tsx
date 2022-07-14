@@ -9,7 +9,6 @@ const Navbar: NextComponentType = () => {
   const [drop, setDrop] = useState(true);
   const { data: session } = useSession();
   const { push, asPath } = useRouter();
-  console.log(session);
   const handleSignOut = async () => {
     const data = await signOut({ redirect: false, callbackUrl: "/" });
     push(data.url);
