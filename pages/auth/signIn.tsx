@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import { useSession, signIn as SignIn, signOut } from "next-auth/react";
 import { useRouter } from "next/router";
-const providers = ['github', 'twitter', 'google'];
+const providers = [
+  'github', 'twitter', 'google'];
+const data = [{
+provid    
+},
+]
 const signIn = () => {
   const { data: session, status } = useSession();
   const { push } = useRouter();
