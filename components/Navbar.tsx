@@ -34,11 +34,8 @@ const Navbar: NextComponentType = () => {
           </span>
         </div>
         <div className="flex basis-2/5 gap-6 items-center ml-6">
-          <span className=" hover:text-neutral transition-all duration-500 ease-in-out">
-            <Link href="/">Login</Link>
-          </span>
-          <span className="bg-neutral py-3 px-6 rounded-full shadow-[0_4px_4px_1px_rgba(4,92,148,0.45)] active:scale-95 hover:bg-[#4097CE] hover:shadow-[0_5px_4px_0px_rgba(64,151,206,0.75)] active:shadow-[0_6px_4px_1px_rgba(64,151,206,0.75)] cursor-pointer transition-all duration-500 ease-in-out">
-            <Link href="/">Sign Up</Link>
+          <span className="bg-neutral py-3 px-6 rounded-full shadow-[0_4px_4px_1px_rgba(4,92,148,0.45)] active:scale-95 hover:bg-[#4097CE] hover:shadow-[0_5px_4px_0px_rgba(64,151,206,0.75)] active:shadow-[0_6px_4px_1px_rgba(64,151,206,0.75)] cursor-pointer transition-all duration-500 ease-in-out" onClick={() => push(`/auth/signIn?callbackUrl=${asPath}dashboard`)}>
+            Login
           </span>
         </div>
       </div>
