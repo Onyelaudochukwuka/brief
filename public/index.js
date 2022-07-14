@@ -8,6 +8,9 @@ import facebook from './icons/facebook.svg';
 import twitter from './icons/twitter.svg';
 import instagram from './icons/instagram.svg';
 import pointer from './icons/pointer.svg';
+import githubProvider from './icons/githubProvider.svg';
+import twitterProvider from './icons/twitterProvider.svg';
+import googleProvider from './icons/googleProvider.svg';
 
 
-export  { brief, browserIcon, customizable, brand, detailed, arrow, facebook, twitter, instagram, pointer };
+export { brief, browserIcon, customizable, brand, detailed, arrow, facebook, twitter, instagram, pointer, githubProvider, googleProvider, twitterProvider };
