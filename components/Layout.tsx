@@ -12,9 +12,7 @@ const Layout = ({children}:any) => {
         <title>Brief</title>
         <link rel="shortcut icon" href="/brief.ico" />
       </Head>
-      <Navbar />
       {children}
-      <Footer />
     </div>
   )
 }
