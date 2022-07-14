@@ -42,12 +42,12 @@ const signIn = () => {
         <button type={"submit"} className="py-2 px-4 w-full rounded-lg bg-gray-100 hover:bg-gray-300 transition duration-500 ease-in cursor-pointer">Login</button>
       </form> */}
     <div className="flex flex-col gap-3 w-5/12">
-        {data.map((data) => <div key={data.provider} onClick={() => SignIn(data.provider)} className="p-3 px-6 pr-16 bg-gray-100 hover:bg-gray-300 rounded-sm transition duration-500 ease-in cursor-pointer capitalize flex gap-8 border-2 border-neutral w-full items-center justify-center text-sm lg:text-sm"><div className="w-8 h-8 block"><Image src={data.icon} layout="responsive" /></div><span className="basis-4/5 w-max break-normal">Sign In With {data.provider}</span></div>)}
+          {data.map((data) => <div key={data.provider} onClick={() => SignIn(data.provider)} className="p-3 px-6 pr-16 bg-light hover:bg-neutral/30 rounded-sm transition duration-500 ease-in cursor-pointer capitalize flex gap-8 border-2 border-neutral w-full items-center justify-center text-sm lg:text-sm active:scale-95"><div className="w-8 h-8 block"><Image src={data.icon} layout="responsive" /></div><span className="basis-4/5 w-max break-normal">Sign In With {data.provider}</span></div>)}
         </div>
         <span className="flex text-dark w-3/6 gap-3"><div className="w-full h-1 rounded-full bg-dark my-auto align-middle"></div> OR <div className="w-full h-1 rounded-full bg-dark my-auto align-middle"></div></span>
         <span className="flex flex-col w-5/12 gap-6">
           <input type={"email"} value={email} onChange={(e) => setEmail(e.target.value)} className="outline-none p-4 pl-6 ring-neutral rounded-sm text-neutral ring-2 focus:ring-dark placeholder:text-neutral w-full" placeholder="Email" />
-          <span className="w-full p-4 text-center font-bold text-lg bg-neutral hover:text-light/80 text-light rounded-md hover:bg-dark cursor-pointer transition duration-500">LogIn</span>
+          <span className="w-full p-4 text-center font-bold text-lg bg-neutral hover:text-light/80 text-light rounded-md hover:bg-dark cursor-pointer transition-[box-shadow,background,color,transform] duration-500 ease-in-out hover:shadow-[3px_4px_2px_rgba(4,92,148,0.25),_0px_4px_2px_rgba(4,92,148,0.25),_4px_4px_2px_rgba(4,92,148,0.73),_3px_3px_2px_rgba(4,92,148,0.288)] tracking-wide shadow-[3px_4px_2px_rgba(2,49,77,0.25),_0px_4px_2px_rgba(2,49,77,0.25),_4px_4px_2px_rgba(2,49,77,0.73),_3px_3px_2px_rgba(2,49,77,0.288)] active:scale-95">LogIn</span>
         </span>
     </div>
     </div>
