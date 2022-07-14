@@ -39,6 +39,7 @@ const Navbar: NextComponentType = () => {
           </span>
         </div>
       </div>
+      <span onClick={()=>handleSignOut()}>SignOut</span>
       <div className="lg:hidden float-right ml-auto">
         <div className="w-14 h-1 bg-light rounded-full cursor-pointer
         after:w-14 after:h-1 after:bg-light after:rounded-full after:absolute after:-mt-2.5 after:cursor-pointer
