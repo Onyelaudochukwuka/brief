@@ -30,8 +30,9 @@ const signIn = () => {
     return <div className="flex items-center justify-center min-h-screen flex-col gap-4"><div className="text-xl font-bold text-center">You're Already signed in</div></div>; 
   }
   return (
-    <div className="flex items-center justify-center min-h-screen flex-col gap-4">
-      <form action="#" onSubmit={(e) => {
+    <div className="flex items-center justify-center min-h-screen flex-col gap-4 bg-neutral">
+      <div className="bg-light p-12 w-3/4 flex flex-col items-center justify-center text-darkPrimary font-bold gap-10">
+      {/* <form action="#" onSubmit={(e) => {
         e.preventDefault();
         if (!email) return false;
         return SignIn('email', {email, redirect: false})
@@ -39,9 +40,15 @@ const signIn = () => {
         <label htmlFor="email">Email Address</label>
         <input type={"email"} id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700" />
         <button type={"submit"} className="py-2 px-4 w-full rounded-lg bg-gray-100 hover:bg-gray-300 transition duration-500 ease-in cursor-pointer">Login</button>
-      </form>
-    <div className="flex flex-col gap-3">
-        {data.map((data) => <div key={data.provider} onClick={() => SignIn(data.provider)} className="p-3 px-6 bg-gray-100 hover:bg-gray-300 rounded-sm transition duration-500 ease-in cursor-pointer capitalize"><span className="w-8 h-8"><Image src={data.icon} className="responsive" /></span><span>Sign In With {data.provider}</span></div>)}
+      </form> */}
+    <div className="flex flex-col gap-3 w-5/12">
+        {data.map((data) => <div key={data.provider} onClick={() => SignIn(data.provider)} className="p-3 px-6 pr-16 bg-gray-100 hover:bg-gray-300 rounded-sm transition duration-500 ease-in cursor-pointer capitalize flex gap-8 border-2 border-neutral w-full items-center justify-center text-sm lg:text-sm"><div className="w-8 h-8 block"><Image src={data.icon} layout="responsive" /></div><span className="basis-4/5 w-max break-normal">Sign In With {data.provider}</span></div>)}
+        </div>
+        <span className="flex text-dark w-3/6 gap-3"><div className="w-full h-1 rounded-full bg-dark my-auto align-middle"></div> OR <div className="w-full h-1 rounded-full bg-dark my-auto align-middle"></div></span>
+        <span className="flex flex-col w-5/12 gap-6">
+          <input type={"email"} value={email} onChange={(e) => setEmail(e.target.value)} className="outline-none p-4 pl-6 ring-neutral rounded-sm text-neutral ring-2 focus:ring-dark placeholder:text-neutral w-full" placeholder="Email" />
+          <span className="w-full p-4 text-center font-bold text-lg bg-neutral hover:text-light/80 text-light rounded-md hover:bg-dark cursor-pointer transition duration-500">LogIn</span>
+        </span>
     </div>
     </div>
   )
