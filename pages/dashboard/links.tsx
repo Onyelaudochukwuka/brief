@@ -5,7 +5,7 @@ const links = () => {
   return (
     <div>
       <DashBoard />
-      <LinkShortener />
+      
     </div>
   )
 }
