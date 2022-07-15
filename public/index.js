@@ -12,6 +12,7 @@ import githubProvider from './icons/githubProvider.svg';
 import twitterProvider from './icons/twitterProvider.svg';
 import googleProvider from './icons/googleProvider.svg';
 import userIcon from './icon.png';
+import link from './link.png';
 
 
-export { brief, browserIcon, customizable, brand, detailed, arrow, facebook, twitter, instagram, pointer, githubProvider, googleProvider, twitterProvider,userIcon };
+export { brief, browserIcon, customizable, brand, detailed, arrow, facebook, twitter, instagram, pointer, githubProvider, googleProvider, twitterProvider, userIcon, link };
