@@ -1,14 +1,17 @@
 import { NextComponentType } from "next"
+import { useSession } from "next-auth/react"
 import Image from "next/image"
 import React, { useEffect, useState } from 'react'
 import { link } from "../public"
 
 type Props = {
     check?: boolean;
+    email?: string;
 }
 
 
-const LinkShortener = ({check}: Props) => {
+const LinkShortener = ({ check }: Props) => {
+    const { data: session } = useSession();
     const [linkVal, setLinkVal] = useState('');
     const [displayCustom, setDisplayCustom] = useState(false);
     useEffect(() => {
