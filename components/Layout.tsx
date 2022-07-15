@@ -7,7 +7,7 @@ import { NextComponentType } from "next"
 import Head from "next/head"
 const Layout = ({children}:any) => {
   return (
-    <div className="bg-darkPrimary">
+    <div className="bg-darkPrimary min-h-screen">
       <Head>
         <title>Brief</title>
         <link rel="shortcut icon" href="/brief.ico" />
