@@ -4,9 +4,16 @@ import { useSession } from "next-auth/react";
 import Image from "next/image";
 import { userIcon } from "../public";
 import LinkShortener from "./LinkShortener";
+import { useRouter } from "next/router";
 type Props = {}
-const DashBoard: NextComponentType = ({}: Props) => {
-  const { data: session } = useSession();
+const DashBoard: NextComponentType = ({ }: Props) => {
+  const { push } = useRouter();
+  const { data: session } = useSession({
+    required: true,
+    onUnauthenticated: () => {
+      push('/auth/signIn')
+    },
+  });
   const [check, setCheck] = useState(false);
   return (
   <>
