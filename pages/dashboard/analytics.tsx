@@ -1,10 +1,10 @@
 import React from 'react'
-import { DashBoard } from "../../components"
+import { AnalyticsDashboard, DashBoard } from "../../components"
 
 const analytics = () => {
   return (
     <div>
-      <DashBoard />
+      <AnalyticsDashboard />
     </div>
   )
 }
