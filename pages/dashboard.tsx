@@ -2,7 +2,9 @@ import React from 'react'
 
 const dashboard = () => {
   return (
-    <div>dashboard</div>
+    <>
+      <span className="text-light">dashboard</span>
+    </>
   )
 }
 
