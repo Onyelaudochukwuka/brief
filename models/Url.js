@@ -4,6 +4,7 @@ const urlSchema = new mongoose.Schema({
     longUrl: String,
     shortUrl: String,
     userEmail: String,
+    linkClicks: Number,
     date: { type: String, default: Date.now() },
 });
 
