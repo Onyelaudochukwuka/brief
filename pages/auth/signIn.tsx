@@ -25,7 +25,7 @@ const signIn = () => {
   if (status == 'loading') return <div className="text-xl font-bold text-center">Checking authentication</div>;
   if (session) {
     setTimeout(() => {
-      push('/')
+      push('/dashboard')
     }, 5000);
     return <div className="flex items-center justify-center min-h-screen flex-col gap-4"><div className="text-xl font-bold text-center">You're Already signed in</div></div>; 
   }
