@@ -1,10 +1,11 @@
 import React from 'react'
-import { DashBoard } from "../../components";
+import { DashBoard, LinkShortener } from "../../components";
 
 const links = () => {
   return (
     <div>
       <DashBoard />
+      <LinkShortener />
     </div>
   )
 }
