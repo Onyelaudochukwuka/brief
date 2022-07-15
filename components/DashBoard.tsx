@@ -7,8 +7,9 @@ const DashBoard: NextComponentType = ({}: Props) => {
   const [check, setCheck] = useState(false)
   return (
     <div className="flex p-6 bg-navBar">
-      <div className="w-16 bg-lightNeutral rounded-full h-6">
-<div className="w-3 h-3 rounded-full bg-dark"></div>
+      <div className="w-32 bg-lightNeutral rounded-full h-10 flex items-center justify-center">
+        <div className={`w-14 h-10 rounded-full bg-dark cursor-pointer transition-[order] duration-300 order-${check ? `1` : `2`}`} onClick={()=>setCheck(!check)}></div>
+        <span className="text-lg font-bold transition-all duration-500">{check ? "Default" : "Custom"}</span>
       </div> 
     </div>
   )
