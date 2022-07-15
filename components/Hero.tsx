@@ -17,6 +17,7 @@ const Hero:NextComponentType = () => {
       </div> 
       <div className="lg:basis-2/5 lg:float-right lg:ml-auto lg:my-auto w-3/5">
         {/* <div className="w-96 h-fit"> */}
+
         <Image src={browserIcon} layout="responsive" />
       {/* </div> */}
       </div>
