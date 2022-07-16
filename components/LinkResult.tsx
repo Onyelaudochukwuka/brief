@@ -1,11 +1,15 @@
 import { NextComponentType } from "next"
 import React from 'react'
 
-type Props = {}
+type Props = {
+    data?: string;
+}
 
-const LinkResult:NextComponentType = ({}: Props) => {
+const LinkResult = ({data}: Props) => {
   return (
-    <div>LinkResult</div>
+      <div className="linear lg:w-3/4 w-10/12 m-auto p-8 px-3 flex lg:flex-row flex-col items-center gap-6" onClick={() => navigator.clipboard.writeText("ffgg")}>
+          LinkResult
+      </div>
   )
 }
 
