@@ -4,14 +4,14 @@ import { shortenLink } from '../services';
 import LinkResult from "./LinkResult";
 const Shorten:NextComponentType = () => {
   const [longUrl, setLongUrl] = useState('');
-  const [data, setData] = useState('')
+  const [data, setData] = useState({})
   return (
     <>
       <form onSubmit={(e) => {
         e.preventDefault();
         if (!setLongUrl) return false;
         shortenLink({ longUrl })
-          .then(({ shortUrl }) => setData(shortUrl))
+          .then((res) => setData(res))
           .catch((err) => console.log(err));
           ;
       }}
