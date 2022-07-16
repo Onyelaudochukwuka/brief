@@ -14,6 +14,7 @@ const DashBoard: NextComponentType = ({ }: Props) => {
       push('/auth/signIn')
     },
   });
+  console.log(session);
   const [check, setCheck] = useState(false);
   return (
   <>
