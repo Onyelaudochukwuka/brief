@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { shortenLink } from '../services';
 const Shorten:NextComponentType = () => {
   const [longUrl, setLongUrl] = useState('');
+  const [data, setData] = useState([])
   return (
     <>
       <form onSubmit={(e) => {
