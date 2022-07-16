@@ -5,7 +5,7 @@ const validUrl = require('valid-url');
 const shortid = require('shortid');
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { method } = req;
-  const { longUrl, customExt } = req.body;
+  const { longUrl } = req.body;
   const baseUrl = process.env.BASE_URL;
   await dbConnect()
 
@@ -15,12 +15,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         return res.status(401).json('invalid base url');
     }
       const Code = shortid.generate();
-      const urlCode = customExt ? customExt : Code;
+      const urlCode = Code;
       if (validUrl.isUri(longUrl)) {
         try {
           let url = await Url.findOne({ longUrl });
           if (url) {
-            res.json(url);
+            res.status(200).json(url);
           } else {
             const shortUrl = baseUrl + urlCode;
 
@@ -32,7 +32,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             });
             await url.save();
 
-            res.json(url);
+            res.status(200).json(url);
           }
         } catch (err) {
           console.error(err);
