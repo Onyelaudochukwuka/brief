@@ -21,7 +21,7 @@ const DashBoard: NextComponentType = ({ }: Props) => {
                 <div className={`w-14 h-10 rounded-full bg-light cursor-pointer transition-[order] duration-300 `} onClick={() => setCheck(!check)}></div>
                 <span className="text-lg font-bold transition-all duration-500">{check ? "Default" : "Custom"}</span>
             </div>
-            <span className="w-12 h-12 cursor-pointer rounded-full"><Image src={userIcon} /></span>
+            {session && <div className="cursor-pointer rounded-full"><Image className="rounded-full" priority src={session?.user?.image ? session?.user?.image : userIcon} width="48px" height={"48px"} /></div>}
         </div>
     )
 }
