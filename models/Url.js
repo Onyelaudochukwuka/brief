@@ -3,7 +3,7 @@ const urlSchema = new mongoose.Schema({
     urlCode: String,
     longUrl: String,
     shortUrl: String,
-    userEmail: String,
+    email: String,
     linkClicks: Number,
     date: { type: String, default: Date.now() },
 });
