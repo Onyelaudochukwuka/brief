@@ -20,7 +20,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         try {
           let url = await Url.findOne({ longUrl, userEmail: email });
             if (url) {
-            res.json(url);
+            res.status(200).json(url);
           } else {
             const shortUrl = baseUrl + urlCode;
                 url = new Url({
@@ -32,7 +32,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 });
             await url.save();
 
-            res.json(url);
+            res.status(200).json(url);
           }
         } catch (err) {
           console.error(err);
