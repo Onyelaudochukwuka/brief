@@ -6,7 +6,6 @@ import { link } from "../public"
 
 type Props = {
     check?: boolean;
-    email?: string;
 }
 
 
