@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   switch (method) {
     case 'POST':
         if (!validUrl.isUri(baseUrl)) {
-        return res.status(401).json('invalid base url');
+        return res.status(400).json('invalid base url');
     }
       const Code = shortid.generate();
       const urlCode = customExt ? customExt : Code;
@@ -35,7 +35,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
               res.status(200).json(url);
       
           } else {
-            res.status(403).json({error: "Link with extension all ready exists please try again with another one"})
+            res.status(400).json({error: "Link with extension all ready exists please try again with another one"})
           }
         }
         catch (err) {
