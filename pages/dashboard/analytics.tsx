@@ -30,14 +30,12 @@ const analytics = () => {
             <span className="basis-1/4">Short Link</span>
             <span className="basis-1/4">Base Link</span>
             <span className="basis-1/4">Date Created</span>
-            <span className="basis-1/4">Link Clicks</span>
           </div>
           {
             data.map((obj:Data, i:number) => <div key={i} className="flex w-full justify-between bg-neutral/50 text-light font-bold text-center py-6 tracking-wide">
               <span className="basis-1/4 break-all">{ obj?.shortUrl }</span>
               <span className="basis-1/4 break-all  ">{ obj?.longUrl }</span>
               <span className="basis-1/4 break-all ">{moment(obj?.date).format('MMM DD, YYYY')}</span>
-              <span className="basis-1/4">13</span>
             </div>)
           }
           

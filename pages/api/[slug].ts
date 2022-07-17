@@ -4,15 +4,17 @@ const Url = require('../../models/Url');
 const validUrl = require('valid-url');
 const shortid = require('shortid');
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-const { method } = req;
+  const { method } = req;
+  const { slug } = req.query;
   await dbConnect()
 
   switch (method) {
     case 'GET':
   try {
-      const url = await Url.findOne({ urlCode: req.query.slug });
-      if (url) {
-          return res.redirect(308,url.longUrl);
+    const url = await Url.findOne({ urlCode: slug });
+    let linkClicks = Number(url.linkClicks);
+    if (url) {
+        return res.redirect(308, url.longUrl);
       } else {
           return res.status(404).json('No url found');
       }
