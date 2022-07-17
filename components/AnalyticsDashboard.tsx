@@ -4,6 +4,7 @@ import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import { userIcon } from "../public";
 import { useRouter } from "next/router";
+import Link from "next/link";
 type Props = {}
 const DashBoard: NextComponentType = ({ }: Props) => {
     const { push } = useRouter();
@@ -27,9 +28,9 @@ const DashBoard: NextComponentType = ({ }: Props) => {
                 <span className="text-lg font-bold transition-all duration-500">{check ? "Default" : "Custom"}</span>
             </div>
             {session && <div className="cursor-pointer rounded-full" onClick={() => setDrop(!drop)}><Image className="rounded-full" priority src={session?.user?.image ? session?.user?.image : userIcon} width="48px" height={"48px"} /></div>}
-            <div className={`absolute flex right-4 flex-col gap-4 ${drop ? `top-24`: `-top-96`} bg-light p-6 transition-all duration-500 ease-in items-center justify-center`}>
-            <span className="font-bold cursor-pointer text-dark hover:text-neutral transition duration-500 ease-in">Links</span>
-            <span className="font-bold cursor-pointer text-dark hover:text-neutral transition duration-500 ease-in">Analytics</span>
+            <div className={`absolute flex right-4 flex-col gap-4 ${drop ? `top-24`: `-top-96`} bg-light p-6 transition-all duration-500 ease-in items-center justify-center z-20`}>
+            <span className="font-bold cursor-pointer text-dark hover:text-neutral transition duration-500 ease-in"><Link href={"/dashboard/links"}>Links</Link></span>
+            <span className="font-bold cursor-pointer text-dark hover:text-neutral transition duration-500 ease-in"><Link href={"/dashboard/analytics"}>Analytics</Link></span>
                 <span className="px-6 py-3 text-lg outline-0 focus:outline-0 focus:border-0  rounded-lg font-bold bg-neutral text-light hover:shadow-[3px_4px_2px_rgba(4,92,148,0.25),_0px_4px_2px_rgba(4,92,148,0.25),_4px_4px_2px_rgba(4,92,148,0.73)] tracking-wide hover:bg-dark shadow-[3px_4px_2px_rgba(2,49,77,0.25),_0px_4px_2px_rgba(2,49,77,0.25),_4px_4px_2px_rgba(2,49,77,0.73)]  transition-[box-shadow,background,color] duration-500 ease-in-out cursor-pointer active:scale-90 w-full" onClick={handleSignOut}>SignOut</span>    
             </div>
         </div>
