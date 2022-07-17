@@ -32,10 +32,7 @@ const LinkShortener = ({ check }: Props) => {
           <form action="#" className="w-full" onSubmit={(e) => {
               e.preventDefault();
               if (!linkVal) return false;
-              if (!check) {
-                  
-                  setDisplayCustom(true);
-              };
+              if (!check) return setDisplayCustom(true);
               return signedInShorten({ longUrl: linkVal, email: session?.user?.image })
                   .then(res => {
                       setShowData(true);
