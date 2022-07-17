@@ -1,7 +1,4 @@
 export const shortenLink = async (obj) => {
-    try {
-
-    
     const result = await fetch('/api/shorten', {
         method: 'POST',
         headers: {
@@ -9,12 +6,7 @@ export const shortenLink = async (obj) => {
         },
         body: JSON.stringify(obj),
     });
-        
-        return result.json();
-     }
-    catch (err) {
-        return err;
-}
+    return result.json();
 }
 export const signedInShorten = async (obj) => {
     const result = await fetch('/api/signinshorten', {

@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   switch (method) {
     case 'POST':
         if (!validUrl.isUri(baseUrl)) {
-        return res.status(401).json('invalid base url');
+        return res.status(401).json({error: 'invalid base url'});
     }
       const Code = shortid.generate();
       const urlCode = Code;
@@ -37,11 +37,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           }
         } catch (err) {
           console.error(err);
-          res.status(500).json('Server error');
+          res.status(500).json({error: 'Server error'});
         }
       }
          else {
-        res.status(401).json('Invalid long url');
+        res.status(401).json({error: 'Invalid long url'});
     }
       break
     default:
