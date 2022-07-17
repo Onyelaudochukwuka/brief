@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 type Props = {}
 const DashBoard: NextComponentType = ({ }: Props) => {
     const { push } = useRouter();
+    
     const { data: session } = useSession({
         required: true,
         onUnauthenticated: () => {
