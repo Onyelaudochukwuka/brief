@@ -20,7 +20,7 @@ export const signedInShorten = async (obj) => {
 }
 export const getData = async (obj) => {
     const result = await fetch('/api/analytics', {
-        method: 'GET',
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
