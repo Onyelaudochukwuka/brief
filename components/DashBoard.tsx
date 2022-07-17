@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 type Props = {}
 const DashBoard: NextComponentType = ({ }: Props) => {
   const { push } = useRouter();
-  const { data: session } = useSession({
+  const { data: session, status } = useSession({
     required: true,
     onUnauthenticated: () => {
       push('/auth/signIn')
@@ -19,8 +19,8 @@ const DashBoard: NextComponentType = ({ }: Props) => {
   setTimeout(()=>setPulse(false),2500)
   }, [])
   
-  console.log(session);
   const [check, setCheck] = useState(false);
+  if (status == 'loading') return <div className="flex items-center justify-center min-h-screen flex-col gap-4"><div className="w-28 h-12 border-l-4 rounded absolute animate-spin border-light"></div><div className="font-black tracking-widest text-center animate-bounce text-light text-4xl shadow">Brief</div></div>; 
   return (
   <>
     <div className="flex p-6 bg-navBar justify-between">
