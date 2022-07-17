@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Link from "next/link";
 import { NextComponentType } from "next";
-import { brief as logo} from '../public';
+import { brief } from '../public';
 import Image from "next/image";
 import { useRouter } from 'next/router';
 import { useSession, signIn, signOut } from "next-auth/react";
@@ -17,7 +17,7 @@ const Navbar: NextComponentType = () => {
     <div className="flex w-full p-6 justify-between items-center text-light bg-navBar font-semibold">
       <div className="basis-2/5">
         <div className="w-24 h-fit">
-          <Image src={logo} layout="responsive" />
+          <Image src={brief} layout="responsive" />
         </div>
       </div> 
       <div className={`lg:flex ${drop ? `flex flex-col absolute gap-12 top-24 z-20 w-full bg-dark left-0 py-4` : `hidden`} lg:py-0 lg:bg-[transparent] lg:top-auto lg:flex-row lg:relative justify-between w-full items-center`}>
