@@ -13,7 +13,7 @@ const Result = ({ data }: Props) => {
     const [copied, setCopied] = useState(false);
     console.log(data);
     return (
-        <>
+        <div className="w-full">
             {copied && <p className="text-[#1c783d] p-4 bg-[#99ffbe] text-center my-3 font-black tracking-widest">Copied!</p>}
       <div className="linear w-fit max-w-[83%] p-8 px-6 mt-4 font-bold text-light tracking-widest flex  lg:flex-row flex-col items-center gap-6 text-sm justify-center mx-auto">
                 <p className="break-all basis-3/5">{ data?.longUrl }</p>
@@ -28,7 +28,7 @@ const Result = ({ data }: Props) => {
                     </span>
                 </span>
             </div>
-        </>
+        </div>
   )
 }
 
