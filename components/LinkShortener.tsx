@@ -28,6 +28,8 @@ const LinkShortener = ({ check }: Props) => {
               e.preventDefault();
               if (!linkVal) return false;
               if (!check) return setDisplayCustom(true);
+              return signedInShorten({ longUrl: linkVal, email: session?.user?.image })
+              .then(res=>console.log(res))
           }} >
           <div className="lg:w-1/2 w-4/5 flex lg:flex-row flex-col items-center justify-center mx-auto mt-8 gap-6">
               <label className="w-full relative block mx-auto">
