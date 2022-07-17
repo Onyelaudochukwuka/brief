@@ -22,7 +22,7 @@ const details = [
 ]
 const Features: NextComponentType = () => {
   return (
-    <div className="py-16 text-light flex flex-col gap-12">
+    <div className="py-16 text-light flex flex-col gap-12" id="features">
       <span>
         <h2 className="text-center font-bold text-2xl">The Link Shortener You Can Trust</h2>
         <h4 className="text-center font-semibold text-base">Add more credibility to your brand with a link everyone loves to click</h4>
