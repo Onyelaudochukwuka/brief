@@ -28,6 +28,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
               longUrl,
               shortUrl,
               urlCode,
+              linkClicks: 0,
               date: new Date()
             });
             await url.save();
