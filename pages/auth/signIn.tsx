@@ -40,7 +40,9 @@ const signIn = () => {
         <form onSubmit={(e) => {
           e.preventDefault();
           if (!email) return false;
-          return SignIn('email', { email, redirect: false }).then(() => setMessage(true));
+          setMessage(true);
+          setTimeout(()=>setMessage(false),3000)
+          return SignIn('email', { email, redirect: false });
         }} className="flex flex-col lg:w-5/12 w-full gap-6">
           <input type={"email"} value={email} onChange={(e) => setEmail(e.target.value)} className="outline-none p-4 pl-6 ring-neutral rounded-sm text-neutral ring-2 focus:ring-dark placeholder:text-neutral w-full" placeholder="Email" />
           {message && <p className="text-center text-sm text-lightNeutral">Check your Inbox/Spam folder for a Login Link</p>}
