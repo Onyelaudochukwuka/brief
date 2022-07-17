@@ -19,7 +19,7 @@ export const signedInShorten = async (obj) => {
     return result.json();
 }
 export const getData = async (obj) => {
-    const result = await fetch('/api/signinshorten', {
+    const result = await fetch('/api/analytics', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
