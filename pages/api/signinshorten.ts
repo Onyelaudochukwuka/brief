@@ -19,12 +19,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       if (validUrl.isUri(longUrl)) {
         try {
        
-            let url = await Url.findOne({ urlCode ,longUrl, userEmail: email });
-            if (url) {
-              res.status(200).json(url);
-            } else {
-              const shortUrl = baseUrl + urlCode;
-              url = new Url({
+          let extExists = await Url.findOne({ urlCode });
+          
+          if (!extExists) {
+          const shortUrl = baseUrl + urlCode;
+           let url = new Url({
                 userEmail: email,
                 longUrl,
                 shortUrl,
@@ -34,8 +33,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
               await url.save();
 
               res.status(200).json(url);
-            }
+      
+          } else {
+            res.status(403).json({error: "Link with extension all ready exists please try again with another one"})
           }
+        }
         catch (err) {
           console.error(err);
           res.status(500).json('Server error');
