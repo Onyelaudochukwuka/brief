@@ -1,30 +1,49 @@
-import React, { useState } from 'react'
+import { useSession } from "next-auth/react";
+import React, { useEffect, useState } from 'react'
 import { AnalyticsDashboard, DashBoard } from "../../components"
-
+import { getData } from "../../services";
+import moment from 'moment';
+type Data = {
+  longUrl?:string;
+  shortUrl?:string;
+  date?:string;
+}
 const analytics = () => {
-  const [data, setData] = useState(["g"]);
-  console.log(![])
+  const [data, setData] = useState([]);
+  const {data: session } = useSession();
+  useEffect(  () => {
+    let email = session?.user?.email;
+    if (email) {
+      getData({ email })
+        .then((res) => setData(res));
+    }
+  }, [session])
+  console.log(data);
+
   return (
-    <div>
+    <div className="w-full">
       <AnalyticsDashboard />
-      {data.length > 0
+      { data.length > 0
         ?
-        <div className="flex flex-col gap-4 items-center justify-center p-8 w-10/12 mx-auto">
+        <div className="flex flex-col gap-4 items-center justify-center p-8 w-full mx-auto">
           <div className="flex w-full bg-navBar justify-between text-light font-bold text-center py-6">
             <span className="basis-1/4">Short Link</span>
             <span className="basis-1/4">Base Link</span>
             <span className="basis-1/4">Date Created</span>
             <span className="basis-1/4">Link Clicks</span>
           </div>
-          <div className="flex w-full justify-between bg-neutral/50 text-light font-bold text-center py-6 tracking-wide">
-            <span className="basis-1/4">https://brief.dev/api/linky</span>
-            <span className="basis-1/4">https://google.com</span>
-            <span className="basis-1/4">09/07/2022</span>
-            <span className="basis-1/4">13</span>
-          </div>
+          {
+            data.map((obj:Data, i:number) => <div key={i} className="flex w-full justify-between bg-neutral/50 text-light font-bold text-center py-6 tracking-wide">
+              <span className="basis-1/4 break-all">{ obj?.shortUrl }</span>
+              <span className="basis-1/4 break-all  ">{ obj?.longUrl }</span>
+              <span className="basis-1/4 break-all ">{moment(obj?.date).format('MMM DD, YYYY')}</span>
+              <span className="basis-1/4">13</span>
+            </div>)
+          }
+          
         </div>
         :
-        <h1 className="flex justify-center flex-1 items-center my-auto h-full mt-24 font-bold text-xl text-light">No Link Shortened</h1>
+        <h1 className="flex justify-center flex-1 items-center my-auto h-full mt-24 font-bold text-xl text-light tracking-widest">No Link Shortened By You</h1>
     }
     </div>
   )
