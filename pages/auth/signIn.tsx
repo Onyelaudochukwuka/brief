@@ -23,12 +23,12 @@ const signIn = () => {
   const { push } = useRouter();
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState(false);
-  if (status == 'loading') return <div className="flex items-center justify-center min-h-screen flex-col gap-4"><div className="text-4xl font-black tracking-widest text-center animate-bounce text-light">Brief</div></div>; 
+  if (status == 'loading') return <div className="flex items-center justify-center min-h-screen flex-col gap-4"><div className="w-28 h-12 border-l-4 rounded absolute animate-spin border-light"></div><div className="font-black tracking-widest text-center animate-bounce text-light text-4xl shadow">Brief</div></div>; 
   if (session) {
     setTimeout(() => {
       push('/dashboard/links')
     }, 5000);
-    return <div className="flex items-center justify-center min-h-screen flex-col gap-4"><div className="font-black tracking-widest text-center animate-bounce text-light text-4xl drop-shadow-2xl  shadow"><div className="w-12 h-23 border-2 border-b-0 border-light animate-spin"></div>Brief</div></div>; 
+    return <div className="flex items-center justify-center min-h-screen flex-col gap-4"><div className="w-28 h-12 border-l-4 rounded absolute animate-spin border-light"></div><div className="font-black tracking-widest text-center animate-bounce text-light text-4xl shadow">Brief</div></div>; 
   }
   return (
     <div className="flex items-center justify-center min-h-screen flex-col gap-4 bg-neutral">
