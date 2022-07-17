@@ -20,7 +20,7 @@ const Navbar: NextComponentType = () => {
           <Image src={logo} layout="responsive" />
         </div>
       </div> 
-      <div className={`lg:flex ${drop ? `flex flex-col absolute gap-4 top-24 z-20 w-full bg-dark left-0 py-4` : `hidden`} lg:flex-row lg:relative justify-between w-full items-center`}>
+      <div className={`lg:flex ${drop ? `flex flex-col absolute gap-12 top-24 z-20 w-full bg-dark left-0 py-4` : `hidden`} lg:py-0 lg:bg-[transparent] lg:top-auto lg:flex-row lg:relative justify-between w-full items-center`}>
           <span className=" hover:text-neutral transition-all duration-500 ease-in-out">
             <a href="#features">Products</a>
           </span>
