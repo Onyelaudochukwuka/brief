@@ -14,4 +14,4 @@ import userIcon from './icon.png';
 import link from './link.svg';
 
 
-export { brief, browserIcon, customizable, brand, detailed, arrow, facebook, twitter, instagram, pointer, githubProvider, googleProvider, twitterProvider, userIcon, link };
+export { browserIcon, customizable, brand, detailed, arrow, facebook, twitter, instagram, pointer, githubProvider, googleProvider, twitterProvider, userIcon, link };
