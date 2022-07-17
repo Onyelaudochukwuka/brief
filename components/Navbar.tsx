@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Link from "next/link";
 import { NextComponentType } from "next";
-import { brief } from '../public';
+import  brief  from './brief.svg';
 import Image from "next/image";
 import { useRouter } from 'next/router';
 import { useSession, signIn, signOut } from "next-auth/react";

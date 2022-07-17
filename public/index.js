@@ -1,4 +1,3 @@
-import brief from './brief.svg';
 import browserIcon from './browserIcon.svg';
 import detailed from './copyIllustration.svg';
 import brand from './monstersIllustration.svg';
