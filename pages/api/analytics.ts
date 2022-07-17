@@ -9,13 +9,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   await dbConnect()
 
   switch (method) {
-    case 'GET':
+    case 'POST':
         try {
-          let url = await Url.find({  userEmail: {$eq: email} });
+          let url = await Url.find({  userEmail: email });
             if (url) {
             res.status(200).json(url);
           } else {
-            res.status(200).json({});
+            res.status(200).json(false);
           }
         } catch (err) {
           console.error(err);
