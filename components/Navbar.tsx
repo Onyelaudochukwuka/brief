@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useRouter } from 'next/router';
 import { useSession, signIn, signOut } from "next-auth/react";
 const Navbar: NextComponentType = () => {
-  const [drop, setDrop] = useState(true);
+  const [drop, setDrop] = useState(false);
   const { data: session } = useSession();
   const { push, asPath } = useRouter();
   const handleSignOut = async () => {
