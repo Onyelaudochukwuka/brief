@@ -25,14 +25,14 @@ const analytics = () => {
       <AnalyticsDashboard />
       { data.length > 0
         ?
-        <div className="flex flex-col gap-4 items-center justify-center p-8 w-full mx-auto">
-          <div className="flex w-full bg-navBar justify-between text-light font-bold text-center py-6">
+        <div className="flex flex-col gap-4 items-center justify-center w-full mx-auto">
+          <div className="flex w-full bg-navBar justify-between px-3 text-light font-bold text-center py-6">
             <span className="basis-1/4">Short Link</span>
             <span className="basis-1/4">Base Link</span>
             <span className="basis-1/4">Date Created</span>
           </div>
           {
-            data.map((obj:Data, i:number) => <div key={i} className="flex w-full justify-between bg-neutral/50 text-light font-bold text-center py-6 tracking-wide">
+            data.map((obj:Data, i:number) => <div key={i} className="flex w-full justify-between bg-neutral/50 text-light font-bold text-center py-6 tracking-wide px-3">
               <span className="basis-1/4 break-all"><a href={obj?.shortUrl}  target={"_blank"} className="text-[#38bdf8] hover:text-[#38bdf8]/40 transition duration-500 ease-in">{ obj?.shortUrl }</a></span>
               <span className="basis-1/4 break-all  ">{ obj?.longUrl }</span>
               <span className="basis-1/4 break-all ">{moment(obj?.date).format('MMM DD, YYYY')}</span>
