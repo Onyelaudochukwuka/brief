@@ -25,7 +25,7 @@ const analytics = () => {
       <AnalyticsDashboard />
       { data.length > 0
         ?
-        <div className="flex flex-col gap-4 items-center justify-center p-8 w-full mx-auto">
+        <div className="flex flex-col gap-4 items-center justify-center p-8 w-full lg:mx-auto">
           <div className="flex w-full bg-navBar justify-between text-light font-bold text-center py-6">
             <span className="basis-1/4">Short Link</span>
             <span className="basis-1/4">Base Link</span>
