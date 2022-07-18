@@ -33,7 +33,7 @@ const LinkShortener = ({ check }: Props) => {
               e.preventDefault();
               if (!linkVal) return false;
               if (!check) return setDisplayCustom(true);
-              return signedInShorten({ longUrl: linkVal, email: session?.user?.image })
+              return signedInShorten({ longUrl: linkVal, email: session?.user?.email })
                   .then(res => {
                       setShowData(true);
                       return setData(res)
