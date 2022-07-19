@@ -10,3 +10,13 @@ font-family: 'Montserrat', sans-serif;
     backdrop-filter: blur(50px);
     border-radius: 15px;
 }
+::-webkit-scrollbar {
+    width: 5px;
+    padding: 3px;
+    @apply bg-darkPrimary;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-neutral;
+    border-radius: 10px;
+}

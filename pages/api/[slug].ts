@@ -12,8 +12,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     case 'GET':
   try {
     const url = await Url.findOne({ urlCode: slug });
-    let linkClicks = Number(url.linkClicks);
     if (url) {
+      let update = await Url.updateOne({ urlCode: slug }, { $inc: { linkClicks: 1 } });
         return res.redirect(308, url.longUrl);
       } else {
           return res.status(404).json('No url found');
