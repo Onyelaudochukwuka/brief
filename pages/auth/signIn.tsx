@@ -3,6 +3,8 @@ import { useSession, signIn as SignIn, signOut } from "next-auth/react";
 import { useRouter } from "next/router";
 import { githubProvider, twitterProvider, googleProvider } from "../../public";
 import Image, { StaticImageData } from "next/image";
+import brief from '../../components/brief.svg';
+import Link from "next/link";
 type dataInt = {
   provider: string;
   icon: StaticImageData;
@@ -32,6 +34,7 @@ const signIn = () => {
   }
   return (
     <div className="flex items-center justify-center min-h-screen flex-col gap-4 bg-neutral">
+       <span className="w-24 h-fit cursor-pointer float-left"><Link href='/' ><Image src={brief} /></Link></span>
       <div className="bg-light p-12 lg:w-3/4 w-10/12 flex flex-col items-center justify-center text-darkPrimary font-bold gap-10">
     <div className="flex flex-col gap-3 lg:w-5/12 w-full">
           {data.map((data) => <div key={data.provider} onClick={() => SignIn(data.provider)} className="p-3 px-6 pr-16 bg-light hover:bg-neutral/30 rounded-sm transition duration-500 ease-in cursor-pointer capitalize flex gap-8 border-2 border-neutral w-full items-center justify-center text-sm lg:text-sm active:scale-95"><div className="w-8 h-8 block"><Image src={data.icon} layout="responsive" /></div><span className="basis-4/5 w-max break-normal">Sign In With {data.provider}</span></div>)}
