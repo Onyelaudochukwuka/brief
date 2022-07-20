@@ -8,10 +8,11 @@ import twitter from './icons/twitter.svg';
 import instagram from './icons/instagram.svg';
 import pointer from './icons/pointer.svg';
 import githubProvider from './icons/githubProvider.svg';
+import github from './icons/github.svg';
 import twitterProvider from './icons/twitterProvider.svg';
 import googleProvider from './icons/googleProvider.svg';
 import userIcon from './icon.png';
 import link from './link.svg';
 
 
-export { browserIcon, customizable, brand, detailed, arrow, facebook, twitter, instagram, pointer, githubProvider, googleProvider, twitterProvider, userIcon, link };
+export { browserIcon, customizable, brand, detailed, arrow, facebook, twitter, instagram, pointer, githubProvider, googleProvider, twitterProvider, userIcon, link, github };
