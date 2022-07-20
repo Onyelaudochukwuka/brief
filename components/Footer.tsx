@@ -2,8 +2,8 @@ import { NextComponentType } from "next";
 import React, { useId } from 'react'
 import Cta from "./Cta";
 import Image from "next/image";
-import { facebook, githubProvider, twitter } from "../public";
-const icons = [{ icon: facebook, link: "" }, { icon: githubProvider, link: "https://github.com/Onyelaudochukwuka" }, { icon: twitter, link: "https://twitter.com/OnyelaUdochukw1"}];
+import { facebook, github, twitter } from "../public";
+const icons = [{ icon: facebook, link: "" }, { icon: github, link: "https://github.com/Onyelaudochukwuka" }, { icon: twitter, link: "https://twitter.com/OnyelaUdochukw1"}];
 const Footer: NextComponentType = () => {
   const ID = useId();
   return (
