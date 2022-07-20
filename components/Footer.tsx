@@ -2,8 +2,8 @@ import { NextComponentType } from "next";
 import React, { useId } from 'react'
 import Cta from "./Cta";
 import Image from "next/image";
-import { facebook, instagram, twitter } from "../public";
-const icons = [facebook, instagram, twitter];
+import { facebook, githubProvider, twitter } from "../public";
+const icons = [{ icon: facebook, link: "" }, { icon: githubProvider, link: "https://github.com/Onyelaudochukwuka" }, { icon: twitter, link: "https://twitter.com/OnyelaUdochukw1"}];
 const Footer: NextComponentType = () => {
   const ID = useId();
   return (
@@ -27,7 +27,7 @@ const Footer: NextComponentType = () => {
         </span>
       </div>
       <div className="flex gap-4">
-        {icons.map((icon,i) => <span key={ID + i} className="w-8 h-8 block cursor-pointer"><Image src={icon} layout="responsive" /></span>)}
+        {icons.map(({icon,link},i) => <a key={ID + i} href={link} className="w-8 h-8 block cursor-pointer"><Image src={icon} layout="responsive" /></a>)}
       </div>
     </div>
   )
