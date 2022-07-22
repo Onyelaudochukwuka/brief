@@ -58,6 +58,7 @@ const LinkShortener = ({ check }: Props) => {
        
               { displayCustom && <form action="#" className="w-full" onSubmit={(e) => {
               e.preventDefault();
+              setLoad(true);
               let obj = {
                   longUrl: linkVal,
                   email: session?.user?.email,
@@ -70,6 +71,7 @@ const LinkShortener = ({ check }: Props) => {
                           return setError(true)
                       };
                       setShowData(true);
+                      setLoad(false);
                       return setData(res)
                   })
                   .catch((err) => console.error(err));
