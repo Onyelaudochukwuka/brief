@@ -27,7 +27,7 @@ const Footer: NextComponentType = () => {
         </span>
       </div>
       <div className="flex gap-4">
-        {icons.map(({icon,link},i) => <a key={ID + i} href={link} className="w-8 h-8 block cursor-pointer"><Image src={icon} layout="responsive" /></a>)}
+        {icons.map(({icon,link},i) => <a key={ID + i} href={link} className="w-8 h-8 block cursor-pointer"><Image src={icon} layout="responsive" alt="social icon" /></a>)}
       </div>
     </div>
   )
