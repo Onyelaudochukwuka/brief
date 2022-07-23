@@ -10,11 +10,11 @@ const Layout = ({ children }: any) => {
   return (
     <div className="bg-darkPrimary min-h-screen">
       <Head>
-        <html lang="en" dir="ltr"/>
+        <html lang="en"/>
           <meta name="author" content="Onyela Udochukwuka" />
         <meta name="description" content="An URL Shortener Built To simplify Things." />
               <meta name="keywords" content="Brief, urlShortener, udoka, url, shortener" />
-                <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+                <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
                   <meta property="og:image:src" content="/brief.ico" />
         <meta property="og:image" content="/brief.ico" />
                       <meta property="og:image:width" content="1200" />
