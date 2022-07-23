@@ -5,12 +5,12 @@ import Footer from "./Footer"
 import { ScriptProps } from "next/script"
 import { NextComponentType } from "next"
 import Head from 'next/head';
-import {Html} from "next/document"
-const Layout = ({children}:any) => {
+const Layout = ({ children }: any) => {
+
   return (
-    <Html lang="en" dir="ltr">
     <div className="bg-darkPrimary min-h-screen">
       <Head>
+        <html lang="en" dir="ltr"/>
           <meta name="author" content="Onyela Udochukwuka" />
         <meta name="description" content="An URL Shortener Built To simplify Things." />
               <meta name="keywords" content="Brief, urlShortener, udoka, url, shortener" />
@@ -27,7 +27,6 @@ const Layout = ({children}:any) => {
       </Head>
       {children}
       </div>
-    </Html>
   )
 }
 
