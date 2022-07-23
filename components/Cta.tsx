@@ -23,8 +23,8 @@ const Cta: NextComponentType = () => {
   return (
     <div className="p-4 flex flex-col gap-10">
       <div>
-        <h1></h1>
-        <div>
+        <h1 className="text-xl font-bold">Commonly Asked questions</h1>
+        <section>
           {data.map(({ header, details }) => {
             const [detailExpand, setDetailExpand] = useState(false);
             return (
@@ -40,7 +40,7 @@ const Cta: NextComponentType = () => {
           }
           )}
           
-        </div>
+        </section>
       </div>
       <div className="flex flex-col text-center text-light items-center gap-8">
         <h1 className="tracking-wide text-xl font-bold">Get A Brief Link Today</h1>
