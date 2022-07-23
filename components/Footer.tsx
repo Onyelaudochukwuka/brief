@@ -3,7 +3,7 @@ import React, { useId } from 'react'
 import Cta from "./Cta";
 import Image from "next/image";
 import { facebook, github, twitter } from "../public";
-const icons = [{ icon: facebook, link: "" }, { icon: github, link: "https://github.com/Onyelaudochukwuka" }, { icon: twitter, link: "https://twitter.com/OnyelaUdochukw1"}];
+const icons = [{ icon: facebook, link: "https://github.com/Onyelaudochukwuka" }, { icon: github, link: "zhttps://github.com/Onyelaudochukwuka" }, { icon: twitter, link: "https://twitter.com/OnyelaUdochukw1"}];
 const Footer: NextComponentType = () => {
   const ID = useId();
   return (
