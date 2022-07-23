@@ -14,7 +14,7 @@ const Navbar: NextComponentType = () => {
     push(data.url);
   };
   return (
-    <div className="flex w-full p-6 justify-between items-center text-light bg-navBar font-semibold">
+    <div className="flex w-full p-6 justify-between items-center text-light bg-navBar font-semibold sticky top-0 z-50">
       <div className="basis-2/5">
         <div className="w-24 h-fit">
           <Image src={brief} layout="responsive" alt="icon" />
