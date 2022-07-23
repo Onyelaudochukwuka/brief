@@ -25,7 +25,7 @@ const Features: NextComponentType = () => {
     <div className="py-16 text-light flex flex-col gap-12" id="features">
       <span>
         <h2 className="text-center font-bold text-2xl">The Link Shortener You Can Trust</h2>
-        <h4 className="text-center font-semibold text-base">Add more credibility to your brand with a link everyone loves to click</h4>
+        <h3 className="text-center font-semibold text-base">Add more credibility to your brand with a link everyone loves to click</h3>
       </span>
       <div className="flex lg:flex-row flex-col px-8 gap-12 justify-between items-center">
         {details.map(({ icon, heading, details }) =>
