@@ -4,9 +4,11 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 import { ScriptProps } from "next/script"
 import { NextComponentType } from "next"
-import Head from "next/head"
+import Head from 'next/head';
+import {Html} from "next/document"
 const Layout = ({children}:any) => {
   return (
+    <Html lang="en" dir="ltr">
     <div className="bg-darkPrimary min-h-screen">
       <Head>
           <meta name="author" content="Onyela Udochukwuka" />
@@ -24,7 +26,8 @@ const Layout = ({children}:any) => {
         <link rel="shortcut icon" href="/brief.ico" />
       </Head>
       {children}
-    </div>
+      </div>
+    </Html>
   )
 }
 
