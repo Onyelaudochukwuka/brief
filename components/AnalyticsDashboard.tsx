@@ -27,7 +27,7 @@ const DashBoard: NextComponentType = ({ }: Props) => {
                 <div className={`w-14 h-10 rounded-full bg-light cursor-pointer transition-[order] duration-300 `} onClick={() => setCheck(!check)}></div>
                 <span className="text-lg font-bold transition-all duration-500">{check ? "Default" : "Custom"}</span>
             </div>
-            {session && <div className="cursor-pointer rounded-full" onClick={() => setDrop(!drop)}><Image className="rounded-full" priority src={session?.user?.image ? session?.user?.image : userIcon} width="48px" height={"48px"} /></div>}
+            {session && <div className="cursor-pointer rounded-full" onClick={() => setDrop(!drop)}><Image className="rounded-full" priority src={session?.user?.image ? session?.user?.image : userIcon} width="48px" height={"48px"} alt="userIcon" /></div>}
             <div className={`absolute flex right-4 flex-col gap-4 ${drop ? `top-24`: `-top-96`} bg-light p-6 transition-all duration-500 ease-in items-center justify-center z-20`}>
             <span className="font-bold cursor-pointer text-dark hover:text-neutral transition duration-500 ease-in"><Link href={"/dashboard/links"}>Links</Link></span>
             <span className="font-bold cursor-pointer text-dark hover:text-neutral transition duration-500 ease-in"><Link href={"/dashboard/analytics"}>Analytics</Link></span>
