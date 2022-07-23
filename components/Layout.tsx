@@ -9,6 +9,17 @@ const Layout = ({children}:any) => {
   return (
     <div className="bg-darkPrimary min-h-screen">
       <Head>
+          <meta name="author" content="Onyela Udochukwuka" />
+        <meta name="description" content="An URL Shortener Built To simplify Things." />
+              <meta name="keywords" content="Brief, urlShortener, udoka, url, shortener" />
+                <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+                  <meta property="og:image:src" content="/brief.ico" />
+        <meta property="og:image" content="/brief.ico" />
+                      <meta property="og:image:width" content="1200" />
+                        <meta property="og:image:height" content="600" />
+                          <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta property="og:description" content="An URL Shortener Built To simplify Things." />
+                            <meta property="og:title" content="Brief" />
         <title>Brief</title>
         <link rel="shortcut icon" href="/brief.ico" />
       </Head>
