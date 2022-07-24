@@ -2,4 +2,4 @@
 
 ### An url shortener to simplify thing's
 
-[visit here](briefy.netlify.app)
+[visit here](https://briefy.netlify.app)
