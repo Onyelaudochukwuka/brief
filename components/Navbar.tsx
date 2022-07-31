@@ -34,10 +34,10 @@ const Navbar: NextComponentType = () => {
           </span>
       </div>
       <div className="lg:hidden float-right ml-auto" onClick={()=>setDrop(!drop)}>
-        <div className={`w-14 h-1 bg-light rounded-full cursor-pointer
-        after:w-14 after:h-1 after:bg-light after:rounded-full after:absolute after:-mt-2.5 after:cursor-pointer
-        before:w-14 before:h-1 before:bg-light before:rounded-full before:absolute before:mt-2.5 before:cursor-pointer
-        ${ drop ? `opacity-0 after:opacity-100` :``  }
+        <div className={`w-14 h-1 bg-light rounded-full cursor-pointer transition-all duration-500 ease-in
+        after:w-14 after:h-1 after:bg-light after:rounded-full after:absolute after:-mt-2.5 after:cursor-pointer after:transition-all after:duration-500 after:ease-in
+        before:w-14 before:h-1 before:bg-light before:rounded-full before:absolute before:mt-2.5 before:cursor-pointer before:transition-all before:duration-500 before:ease-in
+        ${ drop ? `bg-transparent after:rotate-45 before:-rotate-45 before:mt-0 after:mt-0` :``  }
         `}></div>
       </div>
     </nav>
