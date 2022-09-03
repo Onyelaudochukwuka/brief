@@ -3,7 +3,9 @@ import React, { useId } from 'react'
 import Cta from "./Cta";
 import Image from "next/image";
 import { facebook, github, twitter } from "../public";
-const icons = [{ icon: facebook, link: "https://github.com/Onyelaudochukwuka" }, { icon: github, link: "zhttps://github.com/Onyelaudochukwuka" }, { icon: twitter, link: "https://twitter.com/OnyelaUdochukw1"}];
+const icons = [{ icon: facebook, link: "https://github.com/Onyelaudochukwuka" }, { icon: github, link: "zhttps://github.com/Onyelaudochukwuka" }, { icon: twitter, link: "https://twitter.com/OnyelaUdochukw1" }];
+const FootLink = ["Blog", "Developer", "Support"];
+const FeaturesLink = ["Link Shortening", "Analytics"];
 const Footer: NextComponentType = () => {
   const ID = useId();
   return (
@@ -13,16 +15,13 @@ const Footer: NextComponentType = () => {
         <span className="flex flex-col lg:gap-4 gap-1 basis-1/3">
           <span className="font-bold text-lg">Features</span>
           <span className="flex flex-col gap-2">
-          <span>Link Shortening</span>
-          <span>Analytics</span>
+            
         </span>
         </span>
         <span className="flex flex-col lg:gap-4 gap-1 basis-1/3">
           <span className="font-bold text-lg">Resources</span>
           <span className="flex flex-col gap-2">
-          <span>Blog</span>
-          <span>Developers</span>
-          <span>Support</span>
+            {FootLink.map((val) => <span className="hover:text-neutral relative w-fit cursor-pointer transition-colors duration-300 ease-in-out after:w-full after:left-0 after:h-1 after:-bottom-1 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-right hover:origin-left after:duration-300 after:bg-neutral after:absolute after:rounded-full">{val}</span>)}
         </span>
         </span>
       </div>
