@@ -9,6 +9,7 @@ const Navbar: NextComponentType = () => {
   const [drop, setDrop] = useState(false);
   const { data: session } = useSession();
   const { push, asPath } = useRouter();
+  
   const handleSignOut = async () => {
     const data = await signOut({ redirect: false, callbackUrl: "/" });
     push(data.url);
@@ -16,15 +17,15 @@ const Navbar: NextComponentType = () => {
   return (
     <nav className="flex w-full p-6 justify-between items-center text-light bg-navBar font-semibold sticky top-0 z-50">
       <div className="basis-2/5">
-        <div className="w-24 h-fit">
+        <div className="w-24 h-fit cursor-pointer">
           <Image src={brief} layout="responsive" alt="icon" priority />
         </div>
       </div> 
       <div className={`lg:flex ${drop ? `flex flex-col gap-12 top-24 z-20 w-full bg-dark left-0 py-8` : `-left-[100%]`} lg:py-0 lg:bg-[transparent] lg:top-auto lg:flex-row lg:relative justify-between w-full items-center absolute  transition-all duration-500 ease-in lg:left-0`}>
-          <span className=" hover:text-neutral transition-all duration-500 ease-in-out">
+          <span className="hover:text-neutral relative transition-colors duration-300 ease-in-out after:w-full after:left-0 after:h-1 after:-bottom-1 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-right hover:origin-left after:duration-300 after:bg-neutral after:absolute after:rounded-full">
             <a href="#features">Products</a>
           </span>
-          <span className=" hover:text-neutral transition-all duration-500 ease-in-out">
+          <span className="hover:text-neutral relative transition-colors duration-300 ease-in-out after:w-full after:left-0 after:h-1 after:-bottom-1 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-right hover:origin-left after:duration-300 after:bg-neutral after:absolute after:rounded-full">
             <Link href="/features">Resources</Link>
           </span>
         <span className="bg-neutral py-3 px-6 rounded-full shadow-[0_4px_4px_1px_rgba(4,92,148,0.45)] active:scale-95 hover:bg-[#4097CE] hover:shadow-[0_5px_4px_0px_rgba(64,151,206,0.75)] active:shadow-[0_6px_4px_1px_rgba(64,151,206,0.75)] cursor-pointer transition-all duration-500 ease-in-out"
