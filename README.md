@@ -1,5 +1,5 @@
 # Brief
 
-### An url shortener to simplify thing's
+### An Url shortener to simplify thing's
 
 [visit here](https://briefy.netlify.app)
