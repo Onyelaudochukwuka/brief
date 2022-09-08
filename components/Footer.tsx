@@ -14,8 +14,7 @@ const Footer: NextComponentType = () => {
         <span className="basis-1/3 text-center text-3xl align-middle my-auto font-bold">Brief</span>
         <span className="flex flex-col lg:gap-4 gap-1 basis-1/3">
           <span className="font-bold text-lg">Features</span>
-          <span className="flex flex-col gap-2">
-            
+          <span className="flex flex-col gap-2">     
         </span>
         </span>
         <span className="flex flex-col lg:gap-4 gap-1 basis-1/3">
