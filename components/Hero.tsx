@@ -10,7 +10,7 @@ const Hero: NextComponentType = () => {
   return (
     <motion.div
       initial={{
-        y: -100
+        y: "-100%"
       }}
       animate={{
         y: 0
