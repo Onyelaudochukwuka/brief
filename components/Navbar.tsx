@@ -26,7 +26,7 @@ const Navbar: NextComponentType = () => {
             <a href="#features">Products</a>
           </span>
           <span className="hover:text-neutral relative transition-colors duration-300 ease-in-out after:w-full after:left-0 after:h-1 after:-bottom-1 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-right hover:origin-left after:duration-300 after:bg-neutral after:absolute after:rounded-full">
-            <Link href="/features">Resources</Link>
+            <Link href="/dashboard">Resources</Link>
           </span>
         <span className="bg-neutral py-3 px-6 rounded-full shadow-[0_4px_4px_1px_rgba(4,92,148,0.45)] active:scale-95 hover:bg-[#4097CE] hover:shadow-[0_5px_4px_0px_rgba(64,151,206,0.75)] active:shadow-[0_6px_4px_1px_rgba(64,151,206,0.75)] cursor-pointer transition-all duration-500 ease-in-out"
           onClick={() => push(`/auth/signIn`)}
