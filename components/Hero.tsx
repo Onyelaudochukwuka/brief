@@ -4,10 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { browserIcon } from "../public";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 const Hero: NextComponentType = () => {
   const { push, asPath } = useRouter();
   return (
-    <div className="text-light lg:py-24 py-12 lg:px-12 flex px-8 lg:items-center lg:flex-row flex-col-reverse">
+    <motion.div
+      initial={{
+        y: -100
+      }}
+      animate={{
+        y: 0
+      }}
+      transition={{duration: 0, type: "spring", stiffness: 140}}
+      className="text-light lg:py-24 py-12 lg:px-12 flex px-8 lg:items-center lg:flex-row flex-col-reverse">
       <div className="lg:basis-1/2 flex lg:items-baseline flex-col">
         <div className="basis-1/2">
           <h1 className="lg:text-[44px] text-2xl font-bold">Brief Links, Faster Results</h1>
@@ -22,7 +31,7 @@ const Hero: NextComponentType = () => {
         <Image src={browserIcon} priority layout="responsive" alt="browserIcon" />
       {/* </div> */}
       </div>
-    </div>
+    </motion.div>
   )
 }
 
